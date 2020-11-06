@@ -7,15 +7,10 @@ pre: "<b>4.3.3 </b>"
 
 JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective [REST APIs](https://www.jfrog.com/confluence/display/JFROG/REST+API)) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation. You can learn more [here](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI). 
 
-1. In your Cloud9 terminal, run the following shell commands to install the JFrog CLI.
+1. In your Azure Cloud Shell, run the following shell commands to install the JFrog CLI.
 
 ```
-echo "[jfrog-cli]" > jfrog-cli.repo;
-echo "name=jfrog-cli" >> jfrog-cli.repo;
-echo "baseurl=https://releases.jfrog.io/artifactory/jfrog-rpms" >> jfrog-cli.repo;
-echo "enabled=1" >> jfrog-cli.repo; echo "gpgcheck=0" >> jfrog-cli.repo;
-sudo mv jfrog-cli.repo /etc/yum.repos.d/;
-sudo yum install -y jfrog-cli;
+( mkdir ~/bin; cd ~/bin; curl -fL https://getcli.jfrog.io | sh )
 ```
 
 2. Execute the following to test the JFrog CLI and check the version.

@@ -6,7 +6,7 @@ pre: "<b>4.3.2 </b>"
 ---
 
 {{% notice tip %}}
-Remember your username and API Key. We will use it again with the JFrog CLI and to set up ECS to deploy your image.
+Remember your username and API Key. We will use it again with the JFrog CLI and to set up Azure AKS to deploy your image.
 {{% /notice %}}
 
 1. Go to your JFrog Platform instance at _https://[server name].jfrog.io_. Refer to your _JFrog Free Subscription Activation_ email if needed. Substitute your _server name_.

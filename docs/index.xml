@@ -121,7 +121,7 @@ Before you can launch ECS container instances and register them into a cluster, 
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
-When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West 2 (Oregon) region.
+When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.
   JFrog Platform Cloud Free Tier   </description>
     </item>
     
@@ -131,7 +131,7 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/432_api_key.html</guid>
-      <description>Remember your username and API Key. We will use it again with the JFrog CLI and to set up ECS to deploy your image.
+      <description>Remember your username and API Key. We will use it again with the JFrog CLI and to set up Azure AKS to deploy your image.
   Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.  Once logged into your JFrog Platform instance, you will be presented with the landing page.</description>
     </item>
     
@@ -151,7 +151,7 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</guid>
       <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
- In your Cloud9 terminal, change directory to the Azure-modernization-with-jfrog directory.</description>
+ In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
     </item>
     
     <item>
