@@ -13,7 +13,8 @@ In this section, we will focus on the NPM package of our application by validati
 As we are building our NPM package and Docker image, the JFrog CLI is collecting build info along the way. Build info is referenced by the build name and build number. Build info is all the information collected during the build which includes details about the build itself. The build info includes the list of project modules, artifacts, dependencies, environment variables and more. When using one of the JFrog CLI to build the code, it can collect the build-info and publish it to Artifactory. When the build info is published to Artifactory, all the published details become visible in the Artifactory UI. 
 {{% /notice %}}
 
-1. In the Azure Cloud Shell, change directory to _azureworkshop/workshop-app_. This directory contains the code for our NPM application.
+1. On your build machine in your Azure Cloud Shell, change directory to _azureworkshop/workshop-app_. This directory contains the code for our NPM application.
+
 2. Configure the NPM repositories with the JFrog CLI. Substitute the _Artifactory server ID_ that you entered previously. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
 
 ``
@@ -44,27 +45,30 @@ This command should result in successful publishing.
 jfrog rt build-publish npm_build 1
 ``
 
+This results in successful publishing of the build info.
+![Build Info Publish](/images/build-info-publish.png)
+
 6. In your JFrog Platform instance, go to **Artifactory** ► **Builds**.
 
-7. Click on **npm_build**. This is our current build. 
+10. Click on **npm_build**. This is our current build. 
 ![Artifactory Builds](/images/artifactory-builds.png)
 
-8. Click on **1**. This is our current build run. This reveals all of our current build info including published artifacts and dependencies. This was collected through our previous JFrog CLI commands.
+7. Click on **1**. This is our current build run. This reveals all of our current build info including published artifacts and dependencies. This was collected through our previous JFrog CLI commands.
 
 ![Build Info](/images/npm-build-info.png)
 
-9. Select the **Build Info JSON** tab. This provides a JSON view of all of our build info.
+8. Select the **Build Info JSON** tab. This provides a JSON view of all of our build info.
 
 ![Build Info](/images/npm-build-info-json.png)
 
-10. Go to **Administration** ► **Xray Security & Compliance** ► **Indexed Resources**.
+9. Go to **Administration** ► **Xray Security & Compliance** ► **Indexed Resources**.
 ![Indexed Resources](/images/indexed-resources.png)
 
-11. Select the **Build** tab.
+10. Select the **Build** tab.
 
-12. Click **Manage Builds**.
+11. Click **Manage Builds**.
 
-13. Move the _npm_build_ to the included builds. This will allow Xray to scan this build.
+12. Move the _npm_build_ to the included builds and click **Save**. This enables Xray to scan this build.
 
 ![Indexed Builds](/images/indexed-builds.png)
 

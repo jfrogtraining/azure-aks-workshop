@@ -31,7 +31,7 @@
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_ecs.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks.html</loc>
   </url>
   
   <url>
@@ -59,11 +59,15 @@
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_code_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_build_machine.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_code_setup.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup.html</loc>
   </url>
   
   <url>
@@ -75,19 +79,19 @@
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_ecs/71_configure_ecs_secrets.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_ecs/72_configure_ecs_role.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_ecs/73_deploy_your_image.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_ecs/74_view_your_application.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/74_view_your_application.html</loc>
   </url>
   
   <url>
@@ -103,19 +107,19 @@
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/431_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/432_api_key.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/432_api_key.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/433_jfrog_cli.html</loc>
   </url>
   
   <url>
-    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/434_configure_jfrog.html</loc>
   </url>
   
   <url>

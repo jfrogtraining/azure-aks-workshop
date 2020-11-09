@@ -41,4 +41,4 @@ The comprehensive vulnerability intelligence databases are constantly updated gi
 
 Our JFrog CLI CI/CD "pipeline" provided an overview of a typical build, docker build and push, security scan and promotion process using Artifactory and Xray.
 
-Next, we will deploy your docker image from the "staging" repository using ECS.
+Next, we will deploy your docker image from the "staging" repository using Azure Kubernetes Service (AKS).

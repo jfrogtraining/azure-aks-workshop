@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: npm-app
+spec:
+  selector:
+    matchLabels:
+      app: npm-app
+  template:
+    metadata:
+      labels:
+        app: npm-app
+    spec:
+      containers:
+        - name: npm-app
+          image: server.jfrog.io/docker-demo/npm-app:latest # IMPORTANT: Update!
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 443
+              name: https
+            - containerPort: 80
+              name: http
+      imagePullSecrets:
+        - name: regcred
