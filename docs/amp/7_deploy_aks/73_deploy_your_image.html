@@ -12,21 +12,21 @@
     <title>Deploy Your Image with AKS :: JFrog DevOps Modernization Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1604955006" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1604955006" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1604979168" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1604979168" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1604955006" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1604979168" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1604955006"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1604979168"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1604955006"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1604955006"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1604979168"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1604979168"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azureworkshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1604955006"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1604979168"></script>
 
     
   </div>
@@ -784,27 +784,6 @@ viewBox="0 0 1014.42 981.05"
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/amp/7_deploy_aks/74_view_your_application.html" title="View Your Application" class="dd-item ">
-        <a href="https://jfrogtraining.github.io/azureworkshop/amp/7_deploy_aks/74_view_your_application.html">
-        <b>7.4 </b>View Your Application
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
         
         </ul>
               
@@ -853,7 +832,7 @@ viewBox="0 0 1014.42 981.05"
               </li>
           
               <li> 
-                  <a class="padding" href="https://github.com/aws-samples/aws-modernization-with-jfrog"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+                  <a class="padding" href="https://github.com/jfrogtraining/azureworkshop"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
               <li> 
@@ -964,19 +943,33 @@ viewBox="0 0 1014.42 981.05"
 <ol start="2">
 <li>Next, we need to set our Artifactory registry credentials in order to pull the NPM application image. We will do this my creating Kubernetes secrets to store these. Execute the following command. Substitute your <em>server name</em> and JFrog Platform credentials (<em>username</em> and <em>API key</em>).</li>
 </ol>
-<pre><code>kubectl create secret docker-registry regcred \
-    --namespace azureworkshop \
-    --docker-server=&lt;server name&gt;.jfrog.io \
-    --docker-username=&lt;username/email&gt; \
-    --docker-password=&lt;api key&gt;
-</code></pre><ol start="3">
+<p><code>kubectl create secret docker-registry regcred  --namespace azureworkshop --docker-server=&lt;server name&gt;.jfrog.io  --docker-username=&lt;username/email&gt;  --docker-password=&lt;api key&gt;</code></p>
+<ol start="3">
 <li>We will use a Kubernetes deployment manifest to deploy the NPM application image. First, we must make a substitution in the file for the image that we want to deploy. Substitute your <em>server name</em>.</li>
 </ol>
-<p><code>sed -i 's/server/&lt;server name&gt;/g' deployment.yaml &gt; my-deployment.yaml</code></p>
+<p><code>sed 's/server/&lt;server name&gt;/g' deployment.yaml &gt; my-deployment.yaml</code></p>
 <ol start="4">
 <li>Now we can deploy with the following command.</li>
 </ol>
 <p><code>kubectl apply -f my-deployment.yaml --namespace azureworkshop</code></p>
+<ol start="5">
+<li>Execute the following to see your deployed pod.</li>
+</ol>
+<p><code>kubectl get pods --namespace azureworkshop</code></p>
+<p>You should see you npm-app pod.</p>
+<p><img src="https://jfrogtraining.github.io/azureworkshop/images/kubectl-get-pods.png" alt="Kubectl Get Pods"></p>
+<ol start="6">
+<li>Now let&rsquo;s get the external IP so that we can view your application. Execute the following.</li>
+</ol>
+<p><code>kubectl get services --namespace azureworkshop</code></p>
+<p>This will provide the EXTERNAL-IP.</p>
+<p><img src="https://jfrogtraining.github.io/azureworkshop/images/kubectl-external-ip.png" alt="Kubectl External IP"></p>
+<ol start="7">
+<li>In your browser, go to https://&lt;EXTERNAL-IP&gt; to view your deployed web application.</li>
+<li>Click through the self-signed certificate warning. You should see the following web application.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azureworkshop/images/npm-app.png" alt="NPM Application"></p>
+<p>Congratulations! You have used Azure AKS to deploy the image that you built with the JFrog Platform.</p>
 
 
 <footer class="footline">
@@ -1446,25 +1439,6 @@ viewBox="0 0 1014.42 981.05"
             
         
                     
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1472,6 +1446,9 @@ viewBox="0 0 1014.42 981.05"
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1496,7 +1473,7 @@ viewBox="0 0 1014.42 981.05"
 			<a class="nav nav-prev" href="https://jfrogtraining.github.io/azureworkshop/amp/7_deploy_aks/72_deploy_cluster.html" title="Deploy an AKS Cluster"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="https://jfrogtraining.github.io/azureworkshop/amp/7_deploy_aks/74_view_your_application.html" title="View Your Application" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="https://jfrogtraining.github.io/azureworkshop/8_conclusion.html" title="Conclusion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1506,19 +1483,19 @@ viewBox="0 0 1014.42 981.05"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1604955006"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1604979168"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1604955006"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1604955006"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1604979168"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1604979168"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1604955006"></script>
+            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1604979168"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

@@ -36,10 +36,6 @@ SUBNET_ID=$(az network vnet subnet show \
     --vnet-name $VNET_NAME \
     --name $SUBNET_NAME \
     --query id -o tsv)
+echo $SUBNET_ID
 ```
 
-4. Execute the following command to confirm the subnet ID.
-
-``
-echo $SUBNET_ID
-``

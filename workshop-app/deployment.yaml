@@ -22,3 +22,21 @@ spec:
               name: http
       imagePullSecrets:
         - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: npm-app
+  name: npm-app
+spec:
+  type: LoadBalancer
+  ports:
+    - name: https
+      port: 443
+      protocol: TCP
+    - name: http
+      port: 80
+      protocol: TCP
+  selector:
+    app: npm-app

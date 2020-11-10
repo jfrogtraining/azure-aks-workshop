@@ -59,7 +59,7 @@ weight = 10
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "repo"
-url = "https://github.com/aws-samples/aws-modernization-with-jfrog"
+url = "https://github.com/jfrogtraining/azureworkshop"
 weight = 20
 
 [[menu.shortcuts]]

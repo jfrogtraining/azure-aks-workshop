@@ -14,27 +14,17 @@ VERSION=$(az aks get-versions \
     --location $REGION_NAME \
     --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' \
     --output tsv)
+echo $VERSION
 ```
 
-2. Execute the following command to see the version.
+2. Next, set an environment variable for the AKS cluster name.
 
-``
-echo $VERSION
-``
-
-3. Next, set an environment variable for the AKS cluster name.
-
-``
+```
 AKS_CLUSTER_NAME=jfrog-aks-workshop-$RANDOM
-``
-
-4. Execute the following command to confirm the cluster name.
-
-``
 echo $AKS_CLUSTER_NAME
-``
+```
 
-5. Now we are ready to deploy the AKS cluster. Execute the following command.
+3. Now we are ready to deploy the AKS cluster. Execute the following command.
 
 ```
 az aks create \
@@ -53,7 +43,11 @@ az aks create \
     --generate-ssh-keys
 ```
 
-6. Execute the following command to get connectivity to the cluster.
+The response will provide a large JSON object showing the cluster attributes.
+
+![Azure Create Cluster](/images/azure-create-cluster.png)
+
+4. Execute the following command to get connectivity to the cluster.
 
 ```
 az aks get-credentials \
@@ -61,8 +55,10 @@ az aks get-credentials \
     --name $AKS_CLUSTER_NAME
 ```
 
-7. To confirm connectivity, execute the following command to list the Kubernetes nodes.
+5. To confirm connectivity, execute the following command to list the Kubernetes nodes.
 
 ``
 kubectl get nodes
 ``
+
+![Kubectl Get Nodes](/images/kubectl-get-nodes.png)

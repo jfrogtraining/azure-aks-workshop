@@ -14,7 +14,7 @@ Now that we have the JFrog CLI installed and configured, we will use it to creat
 3. Execute the script on the build machine to create Artifactory repositories, Xray watches and policies. This command will take a few minutes to complete.
 
 ``
-scripts/create_entities.sh
+source scripts/create_entities.sh
 ``
 
 You should see the command execute as follows.

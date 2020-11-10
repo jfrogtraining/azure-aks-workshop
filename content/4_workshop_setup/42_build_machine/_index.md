@@ -78,8 +78,10 @@ An Azure subscription serves as a single billing unit for Azure resources in tha
 8. Execute the following commands to install the build tools.
 
 ```
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt update
-sudo apt-get install -y jq npm docker.io
+sudo apt-get install -y jq npm docker.io apt-transport-https kubectl
 ```
 
 9. Update NPM to the latest version with the following command.
