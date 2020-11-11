@@ -18,6 +18,16 @@ sudo docker build -t <server name>.jfrog.io/docker-demo/npm-app:latest .
 This command should result in a successful Docker image build.
 ![Docker Build](/images/docker-build.png)
 
+{{%expand "Docker rate limit policies! Artifactory can help!" %}}
+Docker Hub has set a new limit on data transfer beginning November 1st for free accounts: 100 pulls for anonymous users and 200 pulls for authenticated/free users for every 6 hours per IP address or a unique user.
+
+Artifactory can protect you from this by proxying and caching images! This reduces the number of pulls from Docker Hub.
+
+Docker also has a 6 month retention policy for free accounts. You can avoid that as well by using Artifactory as your private registry.
+
+![Docker Remote](/images/docker-remote.png)
+.{{% /expand%}}
+
 2. Now use the JFrog CLI to push the docker image. Substitute your _server name_ in the following command.
 
 ``
@@ -38,6 +48,10 @@ This command should result in successful scanning.
 ``
 jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local
 ``
+
+{{%expand "Review what we have done." %}}
+![Docker Review](/images/docker-review.png)
+.{{% /expand%}}
 
 5. In your JFrog Platform instance, go to **Artifactory** ► **Artifacts** to see this in the docker repositories.
 

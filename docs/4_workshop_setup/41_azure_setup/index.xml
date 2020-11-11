@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure Setup on JFrog DevOps Modernization Workshop</title>
-    <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup.html</link>
+    <link>/4_workshop_setup/41_azure_setup.html</link>
     <description>Recent content in Azure Setup on JFrog DevOps Modernization Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="/4_workshop_setup/41_azure_setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Event: Create an Azure account</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</link>
+      <link>/4_workshop_setup/41_azure_setup/412_azure_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</guid>
+      <guid>/4_workshop_setup/41_azure_setup/412_azure_event_account.html</guid>
       <description>Only complete this section if you are running the workshop through an Azure hosted event.
  For an Azure hosted event, you are provided with an Azure Pass promotional code. This is your unique promotional code. The following steps show how to use the Azure Pass promotional code to create a new Azure account.
  Go to microsoftazurepass.com.  Click Start &amp;gt;. If you already have a Microsoft account, sign in.</description>
@@ -19,20 +19,23 @@
     
     <item>
       <title>Self-paced: Create an Azure account</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</link>
+      <link>/4_workshop_setup/41_azure_setup/413_self_paced_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</guid>
-      <description> Only complete this section if you are running the workshop on your own. If you are at an Azure hosted event, go here.
-  If you don&amp;rsquo;t already have an Azure account, create one now by going here.  </description>
+      <guid>/4_workshop_setup/41_azure_setup/413_self_paced_account.html</guid>
+      <description>Only complete this section if you are running the workshop on your own. If you are at an Azure hosted event, go here.
+   If you don&amp;rsquo;t already have an Azure account, create one now by going here.
+  Select Start free.
+  Sign in with your Microsoft or GitHub account or create a free Microsoft account.
+  On the About you page, select your correct country or region.</description>
     </item>
     
     <item>
       <title>Set up your Azure Cloud Shell</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</link>
+      <link>/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
+      <guid>/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
       <description>Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
  In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. It will take a few minutes to set up the storage.  When complete, your Azure Cloud Shell is ready!</description>
     </item>

@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deploy on Azure AKS on JFrog DevOps Modernization Workshop</title>
-    <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks.html</link>
+    <link>/7_deploy_aks.html</link>
     <description>Recent content in Deploy on Azure AKS on JFrog DevOps Modernization Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="/7_deploy_aks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configure AKS Cluster Networking</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</link>
+      <link>/7_deploy_aks/71_configure_networking.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</guid>
+      <guid>/7_deploy_aks/71_configure_networking.html</guid>
       <description>Before deploying an AKS cluster for the NPM application, we must first set up the require networking with the following steps.
  On your build machine in your Azure Cloud Shell, let&amp;rsquo;s first set some common environment variables. Execute the following.  REGION_NAME=westus RESOURCE_GROUP=azureworkshop SUBNET_NAME=aks-subnet VNET_NAME=aks-vnet Next, execute the following command to create a virtual network for the AKS cluster.  az network vnet create \ --resource-group $RESOURCE_GROUP \ --location $REGION_NAME \ --name $VNET_NAME \ --address-prefixes 10.</description>
     </item>
     
     <item>
       <title>Deploy an AKS Cluster</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</link>
+      <link>/7_deploy_aks/72_deploy_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</guid>
+      <guid>/7_deploy_aks/72_deploy_cluster.html</guid>
       <description>Now we are ready to deploy an AKS cluster.
  First, let&amp;rsquo;s get the latest version of Kubernetes that is available with the following command.  VERSION=$(az aks get-versions \ --location $REGION_NAME \ --query &#39;orchestrators[?!isPreview] | [-1].orchestratorVersion&#39; \ --output tsv) echo $VERSION Next, set an environment variable for the AKS cluster name.  AKS_CLUSTER_NAME=jfrog-aks-workshop-$RANDOM echo $AKS_CLUSTER_NAME Now we are ready to deploy the AKS cluster. Execute the following command.  az aks create \ --resource-group $RESOURCE_GROUP \ --name $AKS_CLUSTER_NAME \ --vm-set-type VirtualMachineScaleSets \ --node-count 2 \ --load-balancer-sku standard \ --location $REGION_NAME \ --kubernetes-version $VERSION \ --network-plugin azure \ --vnet-subnet-id $SUBNET_ID \ --service-cidr 10.</description>
     </item>
     
     <item>
       <title>Deploy Your Image with AKS</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</link>
+      <link>/7_deploy_aks/73_deploy_your_image.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</guid>
+      <guid>/7_deploy_aks/73_deploy_your_image.html</guid>
       <description>With an AKS cluster deployed, we are now ready to deploy our NPM application!
  First, let&amp;rsquo;s create a namespace to provide isolation. Execute the following.  kubectl create namespace azureworkshop
 Next, we need to set our Artifactory registry credentials in order to pull the NPM application image. We will do this my creating Kubernetes secrets to store these. Execute the following command. Substitute your server name and JFrog Platform credentials (username and API key).</description>
