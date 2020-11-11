@@ -18,15 +18,15 @@ kubectl create namespace azureworkshop
 ``
 kubectl create secret docker-registry regcred 
     --namespace azureworkshop
-    --docker-server=<server name>.jfrog.io 
-    --docker-username=<username/email> 
-    --docker-password=<api key>
+    --docker-server=$jfrog_server_id 
+    --docker-username=$jfrog_user
+    --docker-password=$jfrog_apikey
 ``
 
-3. We will use a Kubernetes deployment manifest to deploy the NPM application image. First, we must make a substitution in the file for the image that we want to deploy. Substitute your _server name_.
+3. We will use a Kubernetes deployment manifest to deploy the NPM application image. First, we must make a substitution in the file for the image that we want to deploy.
 
 ``
-sed 's/server/<server name>/g' deployment.yaml > my-deployment.yaml
+sed "s|imageName|$image_name|g" deployment.yaml > my-deployment.yaml
 ``
 
 4. Now we can deploy with the following command.

@@ -52,7 +52,7 @@ This command should result in successful scanning.
 5. If our build passes the Xray scan, we can promote it with the following command. This promotes from the _dev_ repository to the _prod_ repository. Substitute your _server name_ in the following command.
 
 ``
-jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local
+jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local --copy
 ``
 
 {{%expand "Review what we have done." %}}

@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: npm-app
-          image: server.jfrog.io/docker-demo/npm-app:latest # IMPORTANT: Update!
+          image: imageName # IMPORTANT: Update!
           imagePullPolicy: Always
           ports:
             - containerPort: 443

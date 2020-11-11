@@ -47,6 +47,10 @@ The response will provide a large JSON object showing the cluster attributes.
 
 ![Azure Create Cluster](/images/azure-create-cluster.png)
 
+{{%expand "What is this command doing?" %}}
+![AKS Deploy](/images/aks-deploy-architecture.svg)
+.{{% /expand%}}
+
 4. Execute the following command to get connectivity to the cluster.
 
 ```

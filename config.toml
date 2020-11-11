@@ -1,8 +1,8 @@
 #Use this baseurl for github pages
-#baseURL = "https://jfrogtraining.github.io/azureworkshop/"
+baseURL = "https://jfrogtraining.github.io/azureworkshop/"
 
 #Use this baseurl for hosting elsewhere
-baseUrl = "/"
+#baseUrl = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 

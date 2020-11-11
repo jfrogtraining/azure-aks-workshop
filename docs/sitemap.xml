@@ -3,135 +3,135 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/</loc>
   </url>
   
   <url>
-    <loc>/1_prerequisites.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/1_prerequisites.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/3_workshop.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/5_build_publish_app.html</loc>
   </url>
   
   <url>
-    <loc>/6_view_results.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/6_view_results.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_aks.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks.html</loc>
   </url>
   
   <url>
-    <loc>/8_conclusion.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/8_conclusion.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/21_continuous_integration_and_delivery.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/21_continuous_integration_and_delivery.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/22_binary_repository_management.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/22_binary_repository_management.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/23_dev_sec_ops.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/23_dev_sec_ops.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/24_jfrog_platform_overview.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/24_jfrog_platform_overview.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_azure_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/42_build_machine.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_build_machine.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_code_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/43_code_setup.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/44_jfrog_setup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app/51_npm.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/5_build_publish_app/51_npm.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app/52_docker.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/5_build_publish_app/52_docker.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_aks/71_configure_networking.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_aks/72_deploy_cluster.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_aks/73_deploy_your_image.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_azure_setup/412_azure_event_account.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_azure_setup/413_self_paced_account.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/44_jfrog_setup/431_jfrog_free.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/431_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/44_jfrog_setup/432_api_key.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/432_api_key.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/44_jfrog_setup/433_jfrog_cli.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/433_jfrog_cli.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/44_jfrog_setup/434_configure_jfrog.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/434_configure_jfrog.html</loc>
   </url>
   
   <url>
-    <loc>/categories.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/categories.html</loc>
   </url>
   
   <url>
-    <loc>/cleanup.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/cleanup.html</loc>
   </url>
   
   <url>
-    <loc>/resources.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/resources.html</loc>
   </url>
   
   <url>
-    <loc>/tags.html</loc>
+    <loc>https://jfrogtraining.github.io/azureworkshop/tags.html</loc>
   </url>
   
 </urlset>
