@@ -32,8 +32,13 @@ This command should result in successful install.
 
 {{%expand "What's going on here?" %}}
 _npm-demo_ is a virtual repository. With _npmjs_ as a remote repository. Artifactory proxies and caches your packages!
+
+![NPM Demo](/images/npm-install-diagram.png)
+
 ![NPM Demo](/images/npm-demo.png)
+
 ![NPM Remote](/images/npm-remote.png)
+
 .{{% /expand%}}
 
 4. Perform an NPM publish to package and deploy to the _npm-demo_ repository. You set this repository in _Step 2_.

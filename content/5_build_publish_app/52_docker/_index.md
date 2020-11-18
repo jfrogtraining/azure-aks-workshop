@@ -32,7 +32,10 @@ Artifactory can protect you from this by proxying and caching images! This reduc
 
 Docker also has a 6 month retention policy for free accounts. You can avoid that as well by using Artifactory as your private registry.
 
+![Docker Proxy](/images/docker-proxy-diagram.png)
+
 ![Docker Remote](/images/docker-remote.png)
+
 .{{% /expand%}}
 
 3. Now use the JFrog CLI to push the docker image.
