@@ -27,6 +27,11 @@ docker-machine create -d azure \
 
 ![Azure Authenticate Code](/images/azure-az-login-code.png)
 
+{{%expand "What's going on here?" %}}
+We are creating a Docker virtual machine as a remote Docker daemon. Our Azure Cloud Shell will be a Docker CLI client and communicate with the docker-vm virtual machine to execute Docker commands.
+![Docker Machine](/images/docker-machine.png)
+.{{% /expand%}}
+
 4. When this completes, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.
 
 ``
