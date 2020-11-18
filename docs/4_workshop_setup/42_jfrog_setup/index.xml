@@ -43,7 +43,7 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</guid>
       <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
- In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
+  In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
     </item>
     
   </channel>

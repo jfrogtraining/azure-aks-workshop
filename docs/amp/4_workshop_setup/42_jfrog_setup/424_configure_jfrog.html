@@ -12,21 +12,21 @@
     <title>Configure JFrog Artifactory and Xray :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1605666692" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1605674637" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1605666692" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1605674637" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1605674637"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1605666692"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1605666692"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1605674637"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1605674637"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azureworkshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1605666692"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1605674637"></script>
 
     
   </div>
@@ -877,9 +877,15 @@ viewBox="0 0 1014.42 981.05"
 
 <p>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the <a href="https://www.jfrog.com/confluence/display/JFROG/REST&#43;API" target="_blank">JFrog Platform REST APIs</a>. This is another way that you can manage and monitor the JFrog Platform.</p>
 <ol>
-<li>In your Azure Cloud Shell, change directory to the <em>azureworkshop</em> directory that you cloned previously.</li>
-<li>Included in this repository is a <em>scripts/create_entities.sh</em> script file that uses the JFrog CLI to configure the JFrog Platform instance. You can <code>more scripts/create_entities.sh</code> to view the contents <em>scripts/create_entities.sh</em> script file or view it from the GitHub repository <a href="https://github.com/jfrogtraining/azureworkshop/blob/master/scripts/create_entities.sh" target="_blank">here</a>. As you browse the script, take notice of the <em>jfrog rt</em> commands. These are the JFrog CLI commands that enables us to create Artifactory repositories and configure Xray.
-<img src="https://jfrogtraining.github.io/azureworkshop/images/create-entities.png" alt="create entities"></li>
+<li>
+<p>In your Azure Cloud Shell, change directory to the <em>azureworkshop</em> directory that you cloned previously.</p>
+</li>
+<li>
+<p>Included in this repository is a <em>scripts/create_entities.sh</em> script file that uses the JFrog CLI to configure the JFrog Platform instance. Open the <em>scripts/create_entities.sh</em> script file in the Azure Shell Editor. As you browse the script, take notice of the <em>jfrog rt</em> commands. These are the JFrog CLI commands that enables us to create Artifactory repositories and configure Xray.</p>
+</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azureworkshop/images/azure-shell-editor-create-entities.png" alt="create entities"></p>
+<ol start="3">
 <li>Execute the script to create Artifactory repositories, Xray watches and policies. This command will take a few minutes to complete.</li>
 </ol>
 <p><code>source scripts/create_entities.sh</code></p>
@@ -1404,19 +1410,19 @@ Policies and Watches allow you to enforce your organization governance standards
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1605674637"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1605674637"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1605666692"></script>
+            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1605674637"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

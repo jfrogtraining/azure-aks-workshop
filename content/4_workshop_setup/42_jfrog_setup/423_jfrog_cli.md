@@ -9,9 +9,11 @@ JFrog CLI is a client that provides a simple CLI interface that automates the ma
 
 1. In your Azure Cloud Shell, run the following shell commands to install the JFrog CLI.
 
-``
-( cd /usr/bin; curl -fL https://getcli.jfrog.io | sudo sh ; sudo chmod +x jfrog)
-``
+```
+curl -fL https://getcli.jfrog.io | sh
+mkdir ~/bin
+mv jfrog ~/bin/
+```
 
 ![JFrog CLI Install](/images/jfrog-cli-install.png)
 

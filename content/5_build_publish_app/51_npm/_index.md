@@ -18,7 +18,7 @@ As we are building our NPM package and Docker image, the JFrog CLI is collecting
 2. Configure the NPM repositories with the JFrog CLI. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
 
 ``
-jfrog rt npmc --repo-resolve npm-demo --repo-deploy npm-demo --server-id-resolve $jfrog_server_id --server-id-deploy $jfrog_server_id
+jfrog rt npmc --repo-resolve npm-demo --repo-deploy npm-demo --server-id-resolve $JFROG_SERVER_ID --server-id-deploy $JFROG_SERVER_ID
 ``
 
 3. Perform an NPM install with the JFrog CLI command to verify NPM dependencies. _--build-name_ specifies the name for this build. _--build-number_ specifies the run. Each time this code is built, reference the same build name, but increment the build number. Build info is referenced to these values.

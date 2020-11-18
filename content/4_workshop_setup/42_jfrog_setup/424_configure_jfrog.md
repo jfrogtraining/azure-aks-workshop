@@ -9,8 +9,11 @@ Now that we have the JFrog CLI installed and configured, we will use it to creat
 
 
 1. In your Azure Cloud Shell, change directory to the _azureworkshop_ directory that you cloned previously.
-2. Included in this repository is a _scripts/create_entities.sh_ script file that uses the JFrog CLI to configure the JFrog Platform instance. You can ``more scripts/create_entities.sh`` to view the contents _scripts/create_entities.sh_ script file or view it from the GitHub repository [here](https://github.com/jfrogtraining/azureworkshop/blob/master/scripts/create_entities.sh). As you browse the script, take notice of the _jfrog rt_ commands. These are the JFrog CLI commands that enables us to create Artifactory repositories and configure Xray.
-![create entities](/images/create-entities.png)
+
+2. Included in this repository is a _scripts/create_entities.sh_ script file that uses the JFrog CLI to configure the JFrog Platform instance. Open the _scripts/create_entities.sh_ script file in the Azure Shell Editor. As you browse the script, take notice of the _jfrog rt_ commands. These are the JFrog CLI commands that enables us to create Artifactory repositories and configure Xray.
+
+![create entities](/images/azure-shell-editor-create-entities.png)
+
 3. Execute the script to create Artifactory repositories, Xray watches and policies. This command will take a few minutes to complete.
 
 ``

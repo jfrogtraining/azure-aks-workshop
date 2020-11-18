@@ -57,7 +57,7 @@ git clone https://github.com/jfrogtraining/azureworkshop.git</description>
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</guid>
       <description>Azure Cloud Shell does not include a Docker daemon by default. We can configure a remote Docker daemon instead with the following steps.
- In your Azure Cloud Shell, execute the following command to create a remote Docker daemon machine. This will take a few minutes.  SUB_ID=$(az account show --query &amp;quot;id&amp;quot; -o tsv) docker-machine create -d azure \ --azure-subscription-id $SUB_ID \ --azure-ssh-user azureuser \ --azure-open-port 80 \ --azure-size &amp;quot;Standard_DS2_v2&amp;quot; \ docker-vm When this complete, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.</description>
+ In your Azure Cloud Shell, execute the following command to create a remote Docker daemon machine. This will take a few minutes.  SUB_ID=$(az account show --query &amp;quot;id&amp;quot; -o tsv) docker-machine create -d azure \ --azure-subscription-id $SUB_ID \ --azure-ssh-user azureuser \ --azure-open-port 80 \ --azure-size &amp;quot;Standard_DS2_v2&amp;quot; \ docker-vm When prompted click on the devicelogin link to open a new browser tab.</description>
     </item>
     
     <item>

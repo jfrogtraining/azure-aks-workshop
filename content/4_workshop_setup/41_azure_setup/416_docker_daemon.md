@@ -19,9 +19,21 @@ docker-machine create -d azure \
     docker-vm
 ```
 
-2. When this complete, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.
+2. When prompted click on the _devicelogin_ link to open a new browser tab.
+
+![Azure Authenticate Device](/images/azure-authenticate-device.png)
+
+3. Authenticate in the browser using the provided code. This will authenticated the new remote Docker daemon machine.
+
+![Azure Authenticate Code](/images/azure-az-login-code.png)
+
+4. When this completes, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.
 
 ``
 eval $(docker-machine env docker-vm --shell bash)
 ``
+
+{{% notice info %}}
+[docker-machine](https://docs.docker.com/machine/) lets you create Docker hosts on your computer, on cloud providers, and inside your own data center. It creates servers, installs Docker on them, then configures the Docker client to talk to them.
+{{% /notice %}}
 

@@ -12,21 +12,21 @@
     <title>Build and Push the Docker Image :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1605666692" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1605666692" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/nucleus.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/fontawesome-all.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hybrid.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/featherlight.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/perfect-scrollbar.min.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/auto-complete.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/atom-one-dark-reasonable.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme.css?1605674637" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/hugo-theme.css?1605674637" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1605666692" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azureworkshop/css/theme-mine.css?1605674637" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery-3.3.1.min.js?1605674637"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1605666692"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1605666692"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/lunr.min.js?1605674637"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/auto-complete.js?1605674637"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azureworkshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1605666692"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azureworkshop/js/search.js?1605674637"></script>
 
     
   </div>
@@ -875,11 +875,12 @@ viewBox="0 0 1014.42 981.05"
 <ol>
 <li>In your Azure Cloud Shell. Let&rsquo;s create a Docker image for our NPM application. Let&rsquo;s create an environment variable for our image name. Substitute your <em>server name</em> in the following command.</li>
 </ol>
-<p><code>export IMAGE_NAME=&lt;server name&gt;.jfrog.io/docker-demo/npm-app:latest</code></p>
-<ol start="2">
+<pre><code>export IMAGE_NAME=${JFROG_SERVER_ID}/docker-demo/npm-app:latest
+echo $IMAGE_NAME
+</code></pre><ol start="2">
 <li>Now let&rsquo;s build a docker image with the following command.</li>
 </ol>
-<p><code>sudo docker build -t $IMAGE_NAME .</code></p>
+<p><code>docker build -t $IMAGE_NAME .</code></p>
 <p>This command should result in a successful Docker image build.
 <img src="https://jfrogtraining.github.io/azureworkshop/images/docker-build.png" alt="Docker Build"></p>
 
@@ -905,7 +906,7 @@ viewBox="0 0 1014.42 981.05"
 <ol start="3">
 <li>Now use the JFrog CLI to push the docker image.</li>
 </ol>
-<p><code>sudo jfrog rt docker-push $IMAGE_NAME docker-demo --build-name=npm_build --build-number=1</code></p>
+<p><code>jfrog rt docker-push $IMAGE_NAME docker-demo --build-name=npm_build --build-number=1</code></p>
 <ol start="4">
 <li>Now trigger a Xray scan of the build.</li>
 </ol>
@@ -1421,19 +1422,19 @@ viewBox="0 0 1014.42 981.05"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/clipboard.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/perfect-scrollbar.jquery.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/jquery.sticky.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/featherlight.min.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/highlight.pack.js?1605674637"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1605666692"></script>
-    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1605666692"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/modernizr.custom-3.6.0.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/learn.js?1605674637"></script>
+    <script src="https://jfrogtraining.github.io/azureworkshop/js/hugo-learn.js?1605674637"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1605666692"></script>
+            <script src="https://jfrogtraining.github.io/azureworkshop/mermaid/mermaid.js?1605674637"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
