@@ -6,7 +6,7 @@ baseURL = "https://jfrogtraining.github.io/azureworkshop/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "JFrog DevOps Modernization Workshop"
+title = "JFrog Platform on Azure Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "true"

@@ -1,12 +1,12 @@
 ---
-title: "JFrog DevOps Modernization Workshop"
+title: "JFrog Platform on Azure Workshop"
 chapter: true
 weight: 1
 ---
 
 ![Azure Logo](/images/azure-logo.jpg)
 
-# DevOps Modernization Workshop
+# JFrog Platform on Azure Workshop
 
 ### Welcome
 

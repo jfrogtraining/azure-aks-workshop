@@ -9,16 +9,16 @@ We will now build a Docker image with our NPM package and publish the image to o
 
 ![JFrog CLI Docker](/images/jfrog-cli-docker.svg)
 
-1. Return to your build machine in your Azure Cloud Shell. Let's create a Docker image for our NPM application. Let's create an environment variable for our image name. Substitute your _server name_ in the following command.
+1. In your Azure Cloud Shell. Let's create a Docker image for our NPM application. Let's create an environment variable for our image name. Substitute your _server name_ in the following command.
 
 ``
-export image_name=<server name>.jfrog.io/docker-demo/npm-app:latest
+export IMAGE_NAME=<server name>.jfrog.io/docker-demo/npm-app:latest
 ``
 
 2. Now let's build a docker image with the following command.
 
 ``
-sudo docker build -t $image_name .
+sudo docker build -t $IMAGE_NAME .
 ``
 
 This command should result in a successful Docker image build.
@@ -37,7 +37,7 @@ Docker also has a 6 month retention policy for free accounts. You can avoid that
 3. Now use the JFrog CLI to push the docker image.
 
 ``
-sudo jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1
+sudo jfrog rt docker-push $IMAGE_NAME docker-demo --build-name=npm_build --build-number=1
 ``
 
 4. Now trigger a Xray scan of the build.

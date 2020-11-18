@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure Setup on JFrog DevOps Modernization Workshop</title>
+    <title>Azure Setup on JFrog Platform on Azure Workshop</title>
     <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup.html</link>
-    <description>Recent content in Azure Setup on JFrog DevOps Modernization Workshop</description>
+    <description>Recent content in Azure Setup on JFrog Platform on Azure Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -37,7 +37,37 @@
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
       <description>Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
- In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. It will take a few minutes to set up the storage.  When complete, your Azure Cloud Shell is ready!</description>
+ In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure Azure Pass - Sponsorship is also selected here. It will take a few minutes to set up the storage.</description>
+    </item>
+    
+    <item>
+      <title>Download the Workshop Code</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</guid>
+      <description>The workshop code is located at https://github.com/jfrogtraining/azureworkshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.
+git clone https://github.com/jfrogtraining/azureworkshop.git</description>
+    </item>
+    
+    <item>
+      <title>Set up Docker Daemon</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</guid>
+      <description>Azure Cloud Shell does not include a Docker daemon by default. We can configure a remote Docker daemon instead with the following steps.
+ In your Azure Cloud Shell, execute the following command to create a remote Docker daemon machine. This will take a few minutes.  SUB_ID=$(az account show --query &amp;quot;id&amp;quot; -o tsv) docker-machine create -d azure \ --azure-subscription-id $SUB_ID \ --azure-ssh-user azureuser \ --azure-open-port 80 \ --azure-size &amp;quot;Standard_DS2_v2&amp;quot; \ docker-vm When this complete, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.</description>
+    </item>
+    
+    <item>
+      <title>Create an AKS Cluster</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</guid>
+      <description>Before deploying an AKS cluster for the NPM application, we must first set up the required networking with the following steps.
+ Execute the following command to create a virtual network for the AKS cluster.  az network vnet create \ --resource-group jfrog-azure-workshop \ --location westus \ --name aks-vnet \ --address-prefixes 10.0.0.0/8 \ --subnet-name aks-subnet \ --subnet-prefixes 10.240.0.0/16 Retrieve and store the resultant subnet ID in an environment variable.  SUBNET_ID=$(az network vnet subnet show \ --resource-group jfrog-azure-workshop \ --vnet-name aks-vnet \ --name aks-subnet \ --query id -o tsv) echo $SUBNET_ID Now we are ready to create an AKS cluster.</description>
     </item>
     
   </channel>

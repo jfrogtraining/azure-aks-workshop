@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JFrog DevOps Modernization Workshop</title>
+    <title>JFrog Platform on Azure Workshop</title>
     <link>https://jfrogtraining.github.io/azureworkshop/</link>
-    <description>Recent content on JFrog DevOps Modernization Workshop</description>
+    <description>Recent content on JFrog Platform on Azure Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azureworkshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -44,37 +44,6 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     </item>
     
     <item>
-      <title>Configure AKS Cluster Networking</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/71_configure_networking.html</guid>
-      <description>Before deploying an AKS cluster for the NPM application, we must first set up the require networking with the following steps.
- On your build machine in your Azure Cloud Shell, let&amp;rsquo;s first set some common environment variables. Execute the following.  REGION_NAME=westus RESOURCE_GROUP=azureworkshop SUBNET_NAME=aks-subnet VNET_NAME=aks-vnet Next, execute the following command to create a virtual network for the AKS cluster.  az network vnet create \ --resource-group $RESOURCE_GROUP \ --location $REGION_NAME \ --name $VNET_NAME \ --address-prefixes 10.</description>
-    </item>
-    
-    <item>
-      <title>Deploy an AKS Cluster</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/72_deploy_cluster.html</guid>
-      <description>Now we are ready to deploy an AKS cluster.
- First, let&amp;rsquo;s get the latest version of Kubernetes that is available with the following command.  VERSION=$(az aks get-versions \ --location $REGION_NAME \ --query &#39;orchestrators[?!isPreview] | [-1].orchestratorVersion&#39; \ --output tsv) echo $VERSION Next, set an environment variable for the AKS cluster name.  AKS_CLUSTER_NAME=jfrog-aks-workshop-$RANDOM echo $AKS_CLUSTER_NAME Now we are ready to deploy the AKS cluster. Execute the following command.  az aks create \ --resource-group $RESOURCE_GROUP \ --name $AKS_CLUSTER_NAME \ --vm-set-type VirtualMachineScaleSets \ --node-count 2 \ --load-balancer-sku standard \ --location $REGION_NAME \ --kubernetes-version $VERSION \ --network-plugin azure \ --vnet-subnet-id $SUBNET_ID \ --service-cidr 10.</description>
-    </item>
-    
-    <item>
-      <title>Deploy Your Image with AKS</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jfrogtraining.github.io/azureworkshop/7_deploy_aks/73_deploy_your_image.html</guid>
-      <description>With an AKS cluster deployed, we are now ready to deploy our NPM application!
- First, let&amp;rsquo;s create a namespace to provide isolation. Execute the following.  kubectl create namespace azureworkshop
-Next, we need to set our Artifactory registry credentials in order to pull the NPM application image. We will do this my creating Kubernetes secrets to store these. Execute the following command. Substitute your server name and JFrog Platform credentials (username and API key).</description>
-    </item>
-    
-    <item>
       <title>Azure Event: Create an Azure account</title>
       <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -105,15 +74,45 @@ Next, we need to set our Artifactory registry credentials in order to pull the N
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
       <description>Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
- In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. It will take a few minutes to set up the storage.  When complete, your Azure Cloud Shell is ready!</description>
+ In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure Azure Pass - Sponsorship is also selected here. It will take a few minutes to set up the storage.</description>
+    </item>
+    
+    <item>
+      <title>Download the Workshop Code</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</guid>
+      <description>The workshop code is located at https://github.com/jfrogtraining/azureworkshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.
+git clone https://github.com/jfrogtraining/azureworkshop.git</description>
+    </item>
+    
+    <item>
+      <title>Set up Docker Daemon</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</guid>
+      <description>Azure Cloud Shell does not include a Docker daemon by default. We can configure a remote Docker daemon instead with the following steps.
+ In your Azure Cloud Shell, execute the following command to create a remote Docker daemon machine. This will take a few minutes.  SUB_ID=$(az account show --query &amp;quot;id&amp;quot; -o tsv) docker-machine create -d azure \ --azure-subscription-id $SUB_ID \ --azure-ssh-user azureuser \ --azure-open-port 80 \ --azure-size &amp;quot;Standard_DS2_v2&amp;quot; \ docker-vm When this complete, execute the following to configure Azure Cloud Shell to use this remote Docker daemon machine.</description>
+    </item>
+    
+    <item>
+      <title>Create an AKS Cluster</title>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</guid>
+      <description>Before deploying an AKS cluster for the NPM application, we must first set up the required networking with the following steps.
+ Execute the following command to create a virtual network for the AKS cluster.  az network vnet create \ --resource-group jfrog-azure-workshop \ --location westus \ --name aks-vnet \ --address-prefixes 10.0.0.0/8 \ --subnet-name aks-subnet \ --subnet-prefixes 10.240.0.0/16 Retrieve and store the resultant subnet ID in an environment variable.  SUBNET_ID=$(az network vnet subnet show \ --resource-group jfrog-azure-workshop \ --vnet-name aks-vnet \ --name aks-subnet \ --query id -o tsv) echo $SUBNET_ID Now we are ready to create an AKS cluster.</description>
     </item>
     
     <item>
       <title>Get a Free JFrog Platform Instance</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/431_jfrog_free.html</link>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/431_jfrog_free.html</guid>
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
 When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.
   JFrog Platform Cloud Free Tier   </description>
@@ -121,31 +120,31 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Generate an API Key</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/432_api_key.html</link>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/432_api_key.html</guid>
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</guid>
       <description>Remember your username and API key. We will use it again with the JFrog CLI and to set up Azure AKS to deploy your image.
   Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.  Once logged into your JFrog Platform instance, you will be presented with the landing page.</description>
     </item>
     
     <item>
       <title>Install and Configure the JFrog CLI</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/433_jfrog_cli.html</link>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/433_jfrog_cli.html</guid>
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</guid>
       <description>JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation.</description>
     </item>
     
     <item>
       <title>Configure JFrog Artifactory and Xray</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/434_configure_jfrog.html</link>
+      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/44_jfrog_setup/434_configure_jfrog.html</guid>
+      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</guid>
       <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
- On your build machine, change directory to the azureworkshop directory that you cloned previously.</description>
+ In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
     </item>
     
     <item>
@@ -155,7 +154,7 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
       
       <guid>https://jfrogtraining.github.io/azureworkshop/cleanup.html</guid>
       <description>Your JFrog Platform Instance - The JFrog Platform instance that you used in this workshop will automatically be destroyed after the workshop. There isn&amp;rsquo;t anything you need to do. If you would like keep it, you can upgrade to one of the premium plans. Do this by clicking on the Upgrade button.   Azure Resources
- View your Azure Resource Groups here. Click on the azureworkshop resource group.</description>
+ View your Azure Resource Groups here. Click on the jfrog-azure-workshop resource group.</description>
     </item>
     
     <item>

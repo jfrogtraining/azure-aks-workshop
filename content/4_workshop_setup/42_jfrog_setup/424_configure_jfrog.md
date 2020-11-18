@@ -8,10 +8,10 @@ pre: "<b>4.3.4 </b>"
 Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the [JFrog Platform REST APIs](https://www.jfrog.com/confluence/display/JFROG/REST+API). This is another way that you can manage and monitor the JFrog Platform. 
 
 
-1. On your build machine, change directory to the _azureworkshop_ directory that you cloned previously.
+1. In your Azure Cloud Shell, change directory to the _azureworkshop_ directory that you cloned previously.
 2. Included in this repository is a _scripts/create_entities.sh_ script file that uses the JFrog CLI to configure the JFrog Platform instance. You can ``more scripts/create_entities.sh`` to view the contents _scripts/create_entities.sh_ script file or view it from the GitHub repository [here](https://github.com/jfrogtraining/azureworkshop/blob/master/scripts/create_entities.sh). As you browse the script, take notice of the _jfrog rt_ commands. These are the JFrog CLI commands that enables us to create Artifactory repositories and configure Xray.
 ![create entities](/images/create-entities.png)
-3. Execute the script on the build machine to create Artifactory repositories, Xray watches and policies. This command will take a few minutes to complete.
+3. Execute the script to create Artifactory repositories, Xray watches and policies. This command will take a few minutes to complete.
 
 ``
 source scripts/create_entities.sh

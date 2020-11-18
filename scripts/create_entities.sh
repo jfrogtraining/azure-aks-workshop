@@ -79,11 +79,11 @@ done
 echo "Creating xray policies"
 for file in ${dirName}/*.policy; do
     policy="$(b=${file##*/}; echo ${b%.*})"
-    curl -u ${jfrog_user}:${jfrog_apikey} -X POST --silent -H "Content-Type: application/json" --data "@${file}" ${BASEURL}/xray/api/v2/policies
+    curl -u ${JFROG_USER}:${JFROG_APIKEY} -X POST --silent -H "Content-Type: application/json" --data "@${file}" ${BASEURL}/xray/api/v2/policies
 done
 
 echo "Creating xray watches"
 for file in ${dirName}/*.watch; do
     watch="$(b=${file##*/}; echo ${b%.*})"
-    curl -u ${jfrog_user}:${jfrog_apikey} -X POST --silent -H "Content-Type: application/json" --data "@${file}" ${BASEURL}/xray/api/v2/watches
+    curl -u ${JFROG_USER}:${JFROG_APIKEY} -X POST --silent -H "Content-Type: application/json" --data "@${file}" ${BASEURL}/xray/api/v2/watches
 done

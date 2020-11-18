@@ -9,7 +9,7 @@ weight: 0
 
 - **Azure Resources** 
     1. View your Azure Resource Groups [here](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
-    2. Click on the **azureworkshop** resource group.
+    2. Click on the **jfrog-azure-workshop** resource group.
     3. Click on **Delete resource group**.
     ![Delete Resource Group](/images/azure-delete-resource-group.png)
     4. Confirm deletion and click **Delete**. Your workshop resources will be deleted after a few minutes.
