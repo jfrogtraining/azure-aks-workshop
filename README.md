@@ -1,4 +1,4 @@
-## Azure DevOps Modernization with JFrog
+## JFrog Platform on Azure Workshop
 
 You can find this workshop here: [https://jfrogtraining.github.io/azure-aks-workshop/](https://jfrogtraining.github.io/azure-aks-workshop/).
 
