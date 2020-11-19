@@ -4,14 +4,14 @@
 	"title": "JFrog Platform on Azure Workshop",
 	"tags": [],
 	"description": "",
-	"content": "JFrog Platform on Azure Workshop Welcome In this workshop you will learn about the JFrog Platform and how to leverage Artifactory and Xray for managing your Software Development Lifecycle (SDLC) and bring DevOps to the cloud on Azure.\nLearning Objectives  Understand the roles of Artifactory and Xray in your software delivery life cycle (SDLC). Use Local, Remote and Virtual Repositories in Artifactory. Publish and promote Build Info. Scan your artifacts and builds for security vulnerabilities.  The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.\n "
+	"content": "JFrog Platform on Azure Workshop Welcome In this workshop you will learn about the JFrog Platform and how to leverage Artifactory and Xray for managing your Software Development Lifecycle (SDLC) and bring DevOps to the cloud on Azure.\nLearning Objectives  Understand the roles of Artifactory and Xray in your software delivery life cycle (SDLC). Use Local, Remote and Virtual Repositories in Artifactory. Publish and promote your artifacts and Build Info. Scan your artifacts and builds for security vulnerabilities. Build and deploy your application onto Azure Kubernetes Service (AKS).  The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.\n "
 },
 {
 	"uri": "https://jfrogtraining.github.io/azureworkshop/1_prerequisites.html",
 	"title": "Prerequisites",
 	"tags": [],
 	"description": "",
-	"content": "The following items are required for this workshop.\n  Azure account - If you are at an Azure event, an account will be provided. Otherwise, go here to create an Azure account.\n  JFrog Platform instance - Use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.\n  Have a notepad available for saving important workshop data.\n  When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.\n  JFrog Platform Cloud Free Tier   "
+	"content": "The following items are required for this workshop.\n  Azure account - If you are at an Azure event, an account will be provided. Otherwise, go here to create an Azure account.\n  JFrog Platform instance - Use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.\n  Have a notepad available for saving important workshop data.\n  "
 },
 {
 	"uri": "https://jfrogtraining.github.io/azureworkshop/2_devops_cloud.html",
@@ -137,14 +137,14 @@
 	"title": "Set up your Azure Cloud Shell",
 	"tags": [],
 	"description": "",
-	"content": "Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.\n In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure Azure Pass - Sponsorship is also selected here. It will take a few minutes to set up the storage.  Execute the following command to show the default subscription. Ensure that the correct subscription is listed as default.  az account show\nExecute the following command to create a new Azure Resource group for our workshop. The resources that we create in this workshop will be created in this resource group.  az group create --name jfrog-azure-workshop --location westus\nA resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution. Generally, add resources that share the same lifecycle to the same resource group so you can easily deploy, update, and delete them as a group.\n "
+	"content": "Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.\n In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure the correct subscription is selected. It will take a few minutes to set up the storage.  Execute the following command to show the default subscription. Ensure that the correct subscription is listed as default.  az account show\nExecute the following command to create a new Azure Resource group for our workshop. The resources that we create in this workshop will be created in this resource group.  az group create --name jfrog-azure-workshop --location westus\nA resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution. Generally, add resources that share the same lifecycle to the same resource group so you can easily deploy, update, and delete them as a group.\n "
 },
 {
 	"uri": "https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html",
 	"title": "Download the Workshop Code",
 	"tags": [],
 	"description": "",
-	"content": "The workshop code is located at https://github.com/jfrogtraining/azureworkshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.\ngit clone https://github.com/jfrogtraining/azureworkshop.git\n"
+	"content": "The workshop code is located at https://github.com/jfrogtraining/azure-aks-workshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.\ngit clone https://github.com/jfrogtraining/azure-aks-workshop.git\n"
 },
 {
 	"uri": "https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html",
@@ -165,7 +165,7 @@
 	"title": "Get a Free JFrog Platform Instance",
 	"tags": [],
 	"description": "",
-	"content": "If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.\nWhen signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.\n  JFrog Platform Cloud Free Tier   "
+	"content": "If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.\nWhen signing up for the JFrog Platform Cloud Free Tier.\n  JFrog Platform Cloud Free Tier   "
 },
 {
 	"uri": "https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/422_api_key.html",

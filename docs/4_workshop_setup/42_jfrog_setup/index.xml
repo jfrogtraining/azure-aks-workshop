@@ -13,7 +13,7 @@
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
-When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.
+When signing up for the JFrog Platform Cloud Free Tier.
   JFrog Platform Cloud Free Tier   </description>
     </item>
     

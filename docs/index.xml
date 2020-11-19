@@ -74,7 +74,7 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
       <description>Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
- In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure Azure Pass - Sponsorship is also selected here. It will take a few minutes to set up the storage.</description>
+ In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure the correct subscription is selected. It will take a few minutes to set up the storage.</description>
     </item>
     
     <item>
@@ -83,8 +83,8 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</guid>
-      <description>The workshop code is located at https://github.com/jfrogtraining/azureworkshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.
-git clone https://github.com/jfrogtraining/azureworkshop.git</description>
+      <description>The workshop code is located at https://github.com/jfrogtraining/azure-aks-workshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.
+git clone https://github.com/jfrogtraining/azure-aks-workshop.git</description>
     </item>
     
     <item>
@@ -114,7 +114,7 @@ git clone https://github.com/jfrogtraining/azureworkshop.git</description>
       
       <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
-When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the US West (California) region.
+When signing up for the JFrog Platform Cloud Free Tier.
   JFrog Platform Cloud Free Tier   </description>
     </item>
     

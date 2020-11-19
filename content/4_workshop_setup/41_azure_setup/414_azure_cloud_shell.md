@@ -11,7 +11,7 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for
 
 ![Azure Cloud Shell Button](/images/azure-cloud-shell-button.png)
 
-2. If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking **Create storage**. Ensure _Azure Pass - Sponsorship_ is also selected here. It will take a few minutes to set up the storage.
+2. If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking **Create storage**. Ensure the correct subscription is selected. It will take a few minutes to set up the storage.
 
 ![Azure Cloud Shell Storage](/images/azure-cloud-shell-storage.png)
 
