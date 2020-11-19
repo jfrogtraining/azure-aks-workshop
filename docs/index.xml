@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JFrog Platform on Azure Workshop</title>
-    <link>https://jfrogtraining.github.io/azureworkshop/</link>
+    <link>https://jfrogtraining.github.io/azure-aks-workshop/</link>
     <description>Recent content on JFrog Platform on Azure Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azureworkshop/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://jfrogtraining.github.io/azure-aks-workshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuous Integration and Delivery</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/21_continuous_integration_and_delivery.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/21_continuous_integration_and_delivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/21_continuous_integration_and_delivery.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/21_continuous_integration_and_delivery.html</guid>
       <description>Continuous integration and delivery (CI/CD) is the process for which your software components are built from code, integrated, tested, released, deployed and ultimately delivered to end-users. CI/CD pipelines are the software assembly line that orchestrates the building of your software. This CI/CD pipeline line requires infrastructure. Cloud computing has allowed this infrastructure to become dynamic and ephemeral. On cloud infrastructure, your CI/CD pipelines scale up and down to meet your software delivery demands.</description>
     </item>
     
     <item>
       <title>Binary Repository Management</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/22_binary_repository_management.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/22_binary_repository_management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/22_binary_repository_management.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/22_binary_repository_management.html</guid>
       <description>A Binary Repository Manager is a software hub that simplifies the development process for different teams across an organization by helping them to collaborate on building coherent and compatible software components. It does this by centralizing the management of all the binary artifacts generated and used by the organization, thereby overcoming the incredible complexity arising from diverse binary artifact types, their position in the overall workflow and the set of dependencies between them.</description>
     </item>
     
     <item>
       <title>DevSecOps</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/23_dev_sec_ops.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/23_dev_sec_ops.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/23_dev_sec_ops.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/23_dev_sec_ops.html</guid>
       <description>Any security issue identified by a security scanning may be reviewed by a small security team that may lack the technical knowledge. This challenge can be reduced by shifting left to the developer and operations teams, making them also responsible for security and compliance. This moves security earlier in the software delivery process. Source code, dependency and artifact security scanning are some examples of moving security into the development process. Implementing the identification of security issues earlier in the CI/CD pipeline, as well as automating security and compliance policies in the Software Development Lifecycle (SDLC), rather than using manual processes, is crucial.</description>
     </item>
     
     <item>
       <title>JFrog Platform for DevOps in the Cloud</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/24_jfrog_platform_overview.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/24_jfrog_platform_overview.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/2_devops_cloud/24_jfrog_platform_overview.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/24_jfrog_platform_overview.html</guid>
       <description>The JFrog Platform is designed to meet the growing needs of companies to develop and distribute software in the cloud. It provides DevOps teams with the tools needed to create, manage, secure and deploy software with ease. These tools cover everything from continuous integration and delivery (CI/CD), binary repository management, artifact maturity, security and vulnerability protection (DevSecOps), release management, analytics and distribution.
 JFrog Artifactory is an Artifact Repository Manager that fully supports software packages created by any language or technology.</description>
     </item>
     
     <item>
       <title>Azure Event: Create an Azure account</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</guid>
       <description>Only complete this section if you are running the workshop through an Azure hosted event.
  For an Azure hosted event, you are provided with an Azure Pass promotional code. This is your unique promotional code. The following steps show how to use the Azure Pass promotional code to create a new Azure account.
  Go to microsoftazurepass.com.  Click Start &amp;gt;. If you already have a Microsoft account, sign in.</description>
@@ -56,10 +56,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Self-paced: Create an Azure account</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html</guid>
       <description>Only complete this section if you are running the workshop on your own. If you are at an Azure hosted event, go here.
    If you don&amp;rsquo;t already have an Azure account, create one now by going here.
   Select Start free.
@@ -69,50 +69,50 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Set up your Azure Cloud Shell</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html</guid>
       <description>Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for managing Azure resources.
  In your Azure Portal, click the Azure Cloud Shell button.  If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking Create storage. Ensure the correct subscription is selected. It will take a few minutes to set up the storage.</description>
     </item>
     
     <item>
       <title>Download the Workshop Code</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_workshop_code.html</guid>
       <description>The workshop code is located at https://github.com/jfrogtraining/azure-aks-workshop GitHub repository. We will clone this repository locally in order to pull the required workshop files and scripts. On your build machine, clone this repository to your local directory with the following command.
 git clone https://github.com/jfrogtraining/azure-aks-workshop.git</description>
     </item>
     
     <item>
       <title>Set up Docker Daemon</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_docker_daemon.html</guid>
       <description>Azure Cloud Shell does not include a Docker daemon by default. We can configure a remote Docker daemon instead with the following steps.
  In your Azure Cloud Shell, execute the following command to create a remote Docker daemon machine. This will take a few minutes.  SUB_ID=$(az account show --query &amp;quot;id&amp;quot; -o tsv) docker-machine create -d azure \ --azure-subscription-id $SUB_ID \ --azure-ssh-user azureuser \ --azure-open-port 80 \ --azure-size &amp;quot;Standard_DS2_v2&amp;quot; \ docker-vm When prompted click on the devicelogin link to open a new browser tab.</description>
     </item>
     
     <item>
       <title>Create an AKS Cluster</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_create_cluster.html</guid>
       <description>Before deploying an AKS cluster for the NPM application, we must first set up the required networking with the following steps.
  Execute the following command to create a virtual network for the AKS cluster.  az network vnet create \ --resource-group jfrog-azure-workshop \ --location westus \ --name aks-vnet \ --address-prefixes 10.0.0.0/8 \ --subnet-name aks-subnet \ --subnet-prefixes 10.240.0.0/16 Retrieve and store the resultant subnet ID in an environment variable.  SUBNET_ID=$(az network vnet subnet show \ --resource-group jfrog-azure-workshop \ --vnet-name aks-vnet \ --name aks-subnet \ --query id -o tsv) echo $SUBNET_ID Now we are ready to create an AKS cluster.</description>
     </item>
     
     <item>
       <title>Get a Free JFrog Platform Instance</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
 When signing up for the JFrog Platform Cloud Free Tier.
   JFrog Platform Cloud Free Tier   </description>
@@ -120,49 +120,49 @@ When signing up for the JFrog Platform Cloud Free Tier.
     
     <item>
       <title>Generate an API Key</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</guid>
       <description>Remember your username and API key. We will use it again with the JFrog CLI and to set up Azure AKS to deploy your image.
   Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.  Once logged into your JFrog Platform instance, you will be presented with the landing page.</description>
     </item>
     
     <item>
       <title>Install and Configure the JFrog CLI</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</guid>
       <description>JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation.</description>
     </item>
     
     <item>
       <title>Configure JFrog Artifactory and Xray</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</guid>
       <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
   In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
     </item>
     
     <item>
       <title>Cleanup</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/cleanup.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/cleanup.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/cleanup.html</guid>
       <description>Your JFrog Platform Instance - The JFrog Platform instance that you used in this workshop will automatically be destroyed after the workshop. There isn&amp;rsquo;t anything you need to do. If you would like keep it, you can upgrade to one of the premium plans. Do this by clicking on the Upgrade button.   Azure Resources
  View your Azure Resource Groups here. Click on the jfrog-azure-workshop resource group.</description>
     </item>
     
     <item>
       <title>Resources</title>
-      <link>https://jfrogtraining.github.io/azureworkshop/resources.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/resources.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azureworkshop/resources.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/resources.html</guid>
       <description>JFrog Platform Documentation - The full documentation of the JFrog Platform, the universal, hybrid, end-to-end DevOps automation solution. It is designed to take you through all the JFrog Products. Including user, administration and developer guides, installation and upgrade procedures, system architecture and configuration, and working with the JFrog application. JFrog Academy - Learn more about the JFrog Platform at your own pace with JFrog Academy free courses taught by our experts.</description>
     </item>
     

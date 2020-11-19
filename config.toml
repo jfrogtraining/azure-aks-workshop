@@ -1,5 +1,5 @@
 #Use this baseurl for github pages
-baseURL = "https://jfrogtraining.github.io/azureworkshop/"
+baseURL = "https://jfrogtraining.github.io/azure-aks-workshop/"
 
 #Use this baseurl for hosting elsewhere
 #baseUrl = "/"
