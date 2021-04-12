@@ -48,3 +48,9 @@ pre: "<b>5.3 </b>"
 10. Use the pulldown to select each step and view the logs.
 
 ![Pipeline Step Logs](/images/pipeline-step-logs.png)
+
+11. When the pipeline execution completes (approximately 5-10 minutes), view the log for the _aks_deploy_ step.
+
+12. Scroll down to get the **$url** value. Click on the link to view the application!
+
+![AKS Deploy URL](/images/aks-deploy-url.png)

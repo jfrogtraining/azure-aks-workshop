@@ -12,21 +12,21 @@
     <title>Make Changes :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618255981" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618255981" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618262237" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618262237" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618255981" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618262237" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618255981"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618262237"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618255981"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618255981"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618262237"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618262237"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azure-aks-workshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618255981"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618262237"></script>
 
     
   </div>
@@ -868,60 +868,11 @@ viewBox="0 0 1014.42 981.05"
 
 
 
-	<p>We have built and published our NPM package and Docker image. Let&rsquo;s view these results in JFrog Artifactory.</p>
+	<p>In the previous steps, we manually built and deployed our application from our code. Any code change can automatically trigger a build.</p>
 <ol>
-<li>
-<p>Go to your JFrog Platform instance and switch to the <strong>Packages</strong> view in Artifactory. Go to <strong>Artifactory</strong> ► <strong>Packages</strong>.</p>
-</li>
-<li>
-<p>Type <code>workshop-app</code> and search. This will show the NPM package that was published with the JFrog CLI.</p>
-</li>
-<li>
-<p>Click on it to view the details.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-workshop-app.png" alt="Npm Workshop App"></p>
-</li>
-<li>
-<p>Go back to the <strong>Packages</strong> view and search for  <code>npm-app</code>. This shows the Docker image that was published.</p>
-</li>
-<li>
-<p>Click on the docker <em>npm-app</em> listing.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-app-package.png" alt="Npm App Package"></p>
-</li>
-<li>
-<p>This will show a list of the versions. Click on the <em>latest</em> version that was built.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-app-versions.png" alt="Npm Build Published Modules"></p>
-</li>
-<li>
-<p>In the <strong>Xray Data</strong> tab, view the security violations. License violations are available in the JFrog Platform Pro and Enterprise tiers.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-build-xray-data.png" alt="Npm Build Xray Data"></p>
-</li>
-<li>
-<p>Click on any violation to see the details and impact in the <strong>Issue Details</strong> tab.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-build-xray-detail.png" alt="Npm Build Xray Detail"></p>
-</li>
-<li>
-<p>Scroll down to the <strong>References</strong> section to access links to documentation that can help you remediate the issue.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-build-xray-detail-references.png" alt="Npm Build Xray Detail References"></p>
-<p>In many cases, you just need to update the component and Xray will indicate this.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-build-xray-detail-version.png" alt="Npm Build Xray Detail Versions"></p>
-</li>
+<li>In your Azure Cloud Shell, use the editor and select workshop-app/src/app/app.component.html.
+<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/azure-cloud-shell-editor-pipeline.png" alt="Azure Cloud Shell Editor Pipeline"></li>
 </ol>
-
-<div class="notices info" ><p>Xray supports all major package types, understands how to unpack them, and uses recursive scanning to see into all of the underlying layers and dependencies of components, even those packaged in Docker images, and zip files.
-The comprehensive vulnerability intelligence databases are constantly updated giving the most up-to-date understanding of the security and compliance of your binaries.</p>
-</div>
-
-<ol start="8">
-<li>Close the <strong>Issue Details</strong> tab.</li>
-<li>View the Docker configuration for the image in the <strong>Docker Layers</strong> tab.</li>
-<li>On the <strong>Builds</strong> tab, click on <em>npm_build</em> in the list.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-build-list.png" alt="Npm Build List"></li>
-<li>Then click on your most recent build.</li>
-<li>In the <strong>Published Modules</strong> tab, view the set of artifacts and dependencies for your build.
-<img src="https://jfrogtraining.github.io/azure-aks-workshop/images/npm-published-modules.png" alt="Npm Published Modules"></li>
-</ol>
-<p>Our JFrog CLI CI/CD &ldquo;pipeline&rdquo; provided an overview of a typical build, docker build and push, security scan and promotion process using Artifactory and Xray.</p>
-<p>Next, we will deploy your docker image from the &ldquo;staging&rdquo; repository using Azure Kubernetes Service (AKS).</p>
 
 
 
@@ -1420,19 +1371,19 @@ The comprehensive vulnerability intelligence databases are constantly updated gi
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618255981"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618262237"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618255981"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618255981"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618262237"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618262237"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618255981"></script>
+            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618262237"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
