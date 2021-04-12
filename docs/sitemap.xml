@@ -71,6 +71,10 @@
   </url>
   
   <url>
+    <loc>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</loc>
+  </url>
+  
+  <url>
     <loc>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html</loc>
   </url>
   
@@ -108,10 +112,6 @@
   
   <url>
     <loc>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_xray_setup.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</loc>
   </url>
   
   <url>

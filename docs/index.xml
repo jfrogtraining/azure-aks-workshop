@@ -60,7 +60,20 @@ An Integration connects Pipelines to an external service/tool. Each integration 
       
       <guid>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/52_update_pipeline.html</guid>
       <description>We need to make an update to our CI/CD pipeline in order to pull code from your GitHub repository and to use your personal JFrog Artifactory instance. The CI/CD pipeline is defined in pipeline.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
- In your Azure Cloud Shell, use the editor and view the pipeline.yml file. View the steps.  </description>
+ In your Azure Cloud Shell, use the editor and view the pipeline.yml file. View and understand the steps. Note the parameterized values.</description>
+    </item>
+    
+    <item>
+      <title>Add our CI/CD Pipeline</title>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</guid>
+      <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.   Click Add a pipeline source.
+  Click Add Pipeline Source at the top right and select From YAML.
+  Call the security policy, High-Severity.   Click on New Rule.
+  Name the rule High-Severity and select High for the Minimal Severity. Click Save.
+   Click Create to create this new security policy.</description>
     </item>
     
     <item>
@@ -165,20 +178,6 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_xray_setup.html</guid>
-      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.   Click Create a Policy.
-  Call the security policy, High-Severity.
-   Click on New Rule.
-  Name the rule High-Severity and select High for the Minimal Severity. Click Save.
-   Click Create to create this new security policy.
-  Click on the Watches tab under Watches &amp;amp; Policies.</description>
-    </item>
-    
-    <item>
-      <title>Set Up Xray Security</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.   Click Create a Policy.
   Call the security policy, High-Severity.
    Click on New Rule.

@@ -7,4 +7,26 @@ pre: "<b>5.2 </b>"
 
 We need to make an update to our CI/CD pipeline in order to pull code from your GitHub repository and to use your personal JFrog Artifactory instance. The CI/CD pipeline is defined in [pipeline.yml](https://github.com/jfrogtraining/azure-aks-workshop/pipeline.yml). This pipeline file is parameterized with a values.yml file. We need to update this file.
 
-1. In your Azure Cloud Shell, use the editor and view the pipeline.yml file. View the steps.
+1. In your Azure Cloud Shell, use the editor and view the pipeline.yml file. View and understand the steps. Note the parameterized values.
+
+![Azure Cloud Shell Editor Pipeline](/images/azure-cloud-shell-editor-pipeline.png)
+
+2. In the editor, select the values.yml file and updated the parameterized values to point to your GitHub repository and JFrog Artifactory instance.
+
+![Azure Cloud Shell Editor Values](/images/azure-cloud-shell-editor-values.png)
+
+3. Commit and push these changes.
+
+``
+git add .
+``
+
+``
+git commit -m 'Updated values.yml.'
+``
+
+``
+git push
+``
+
+We are now ready to add your CI/CD pipeline and execute!

@@ -1,15 +1,20 @@
 ﻿---
-title: "Set Up Xray Security"
+title: "Add our CI/CD Pipeline"
 chapter: false
-weight: 424
-pre: "<b>4.2.4 </b>"
+weight: 53
+pre: "<b>5.3 </b>"
 ---
 
-1. In your JFrog Platform instance, go to **Administration** > **Xray** > **Watches & Policies**.
+1. In your JFrog Platform instance, go to **Application** > **Pipelines** > **Pipeline Sources**.
 
-![Watches & Policies](/images/watches-policies.png)
+![Pipeline Sources](/images/pipeline-sources.png)
 
-2. Click **Create a Policy**.
+2. Click **Add a pipeline source**.
+
+
+3. Click **Add Pipeline Source** at the top right and select **From YAML**.
+
+![Pipeline From YAML](/images/pipeline-from-yaml.png)
 
 3. Call the security policy, _High-Severity_.
 
