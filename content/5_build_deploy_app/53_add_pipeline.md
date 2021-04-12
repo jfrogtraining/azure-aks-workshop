@@ -25,7 +25,7 @@ pre: "<b>5.3 </b>"
 
 ![Create Pipeline Source](/images/create-pipeline-source.png)
 
-5. Click **Create Source**. JFrog Pipelines will process the CI/CD pipeline. The status should show **Syncing** and then **Success**.
+5. Click **Create Source**. JFrog Pipelines will process the CI/CD pipeline. The status should show **Not Synced** then **Syncing** and then **Success**.
 
 ![Success Pipeline Source](/images/success-pipeline-source.png)
 

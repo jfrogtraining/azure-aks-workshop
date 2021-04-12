@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: npm-app
+  name: workshop-app
 spec:
   selector:
     matchLabels:
-      app: npm-app
+      app: workshop-app
   template:
     metadata:
       labels:
-        app: npm-app
+        app: workshop-app
     spec:
       containers:
-        - name: npm-app
+        - name: workshop-app
           image: imageName # IMPORTANT: Update!
           imagePullPolicy: Always
           ports:
@@ -20,15 +20,13 @@ spec:
               name: https
             - containerPort: 80
               name: http
-      imagePullSecrets:
-        - name: regcred
 ---
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: npm-app
-  name: npm-app
+    app: workshop-app
+  name: workshop-app
 spec:
   type: LoadBalancer
   ports:
@@ -39,4 +37,4 @@ spec:
       port: 80
       protocol: TCP
   selector:
-    app: npm-app
+    app: workshop-app
