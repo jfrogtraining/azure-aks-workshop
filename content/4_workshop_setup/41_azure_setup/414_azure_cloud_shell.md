@@ -11,28 +11,48 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for
 
 ![Azure Cloud Shell Button](/images/azure-cloud-shell-button.png)
 
-2. If this is your first time using Azure Cloud Shell, you will be prompted to mount storage to support it. Go ahead and do this by clicking **Create storage**. Ensure the correct subscription is selected. It will take a few minutes to set up the storage.
+2. You will be prompted for a shell type. Choose **Bash**.
+
+![Azure Cloud Shell Bash](/images/azure-cloud-shell-bash.png)
+
+3. If this is your first time using Azure Cloud Shell, you will be prompted to create storage to support it. Go ahead and do this by clicking **Create storage** with the provided subscription. It will take a few minutes to set up the storage.
 
 ![Azure Cloud Shell Storage](/images/azure-cloud-shell-storage.png)
 
+4. Click on **Show advanced settings**.
+
+5. Use the existing **jfrog-azure-resource-xxx** group. Specify new unique values for storage and file share.
+
+![Azure Cloud Shell Advanced](/images/azure-cloud-shell-advanced.png)
+
+6. Click **Create storage**. Wait a few moments for the Azure Cloud Shell to be set up.
+
 ![Azure Cloud Shell Ready](/images/azure-cloud-shell-ready.png)
 
-3. Execute the following command to show the default subscription. Ensure that the correct subscription is listed as default.
+5. Execute the following command to list your Azure Resource groups. 
 
 ``
-az account show
+az group list
 ``
 
-![Azure Account Shpw](/images/az-account-show.png)
+![Azure Resource Group Workshop](/images/azure-resource-group-workshop.png)
 
-4. Execute the following command to create a new Azure Resource group for our workshop. The resources that we create in this workshop will be created in this resource group.
+6. Note the resource group named _jfrog-azure-workshop-xxxx_ and the region/location. Copy these values. The resources that we create in this workshop will be created in this resource group and region.
+
+7. Set environment variables for your resource group and region.
 
 ``
-az group create --name jfrog-azure-workshop --location westus
+export REGION=<region/location>
 ``
+
+``
+export RESOURCE_GROUP=<resource group>
+``
+
+![Azure Environment Vars](/images/azure-env-vars.png)
 
 {{% notice info %}}
-A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution. Generally, add resources that share the same lifecycle to the same resource group so you can easily deploy, update, and delete them as a group.
+A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution. Generally, add resources that share the same lifecycle to the same resource group so that you can easily deploy, update, and delete them as a group.
 {{% /notice %}}
 
 

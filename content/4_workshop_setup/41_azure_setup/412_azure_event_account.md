@@ -1,49 +1,30 @@
 ---
-title: "Azure Event: Create an Azure account"
+title: "JFrog Azure Event: Get an Azure Environment"
 chapter: false
 weight: 412
 pre: "<b>4.1.2 </b>"
 ---
 
 {{% notice warning %}}
-Only complete this section if you are running the workshop through an Azure hosted event.
+Only complete this section if you are running the workshop through an JFrog Azure hosted event. If you are not at a JFrog Azure hosted event, go [here](413_self_paced_account.html).
 {{% /notice %}}
 
 
-For an Azure hosted event, you are provided with an Azure Pass promotional code. This is your unique promotional code. The following steps show how to use the Azure Pass promotional code to create a new Azure account.
+For an JFrog Azure hosted event, you will be provided with a registration link and an activation code. The following steps show how to use the activation code to access an Azure environment for this workshop.
 
-1. Go to [microsoftazurepass.com](https://www.microsoftazurepass.com/).
-![Azure Pass Start](/images/azure-pass-start.png)
-2. Click **Start >**.
-3. If you already have a Microsoft account, sign in. Otherwise, follow the steps to create a new account.
-![Azure Account Sign in or Create](/images/azure-account-signin-create.png)
-4. After signing in or creating your account, confirm the account for your Azure Pass.
-![Confirm Azure Pass Account](/images/confirm-azure-account.png)
-5. Enter your Azure Pass promotional code and click **Claim Promo Code**. It will take a few seconds to process this request.
-![Enter Azure](/images/enter-azure-pass.png)
-6. Choose to apply the Azure Pass to a new subscription by choosing **Create a new subscription**. 
+1. Go to the registration link in your browser.
+2. Fill out the details in the registration form and enter the activation code.
+   ![Azure Environment Registration](/images/azure-environment-registration.png)
+3. Then click **Launch Lab** on the next screen.
+   ![Azure Environment Launch](/images/azure-environment-launch.png)
+4. Wait a few moments for your Azure environment to be created. When ready, you will be presented with your Azure environment credentials.
+   ![Azure Environment Ready](/images/azure-environment-ready.png)
+5. Copy these credentials. 
+6. Use these Azure Credentials to login to the Azure Portal [here](https://portal.azure.com/). Once logged in, you will be directed to the Azure Portal landing page.
+   ![Azure Portal](/images/azure-portal.png)
 
-{{% notice info %}}
-A subscription refers to the logical entity that provides entitlement to deploy and consume Azure resources. The Azure resources created during this workshop will be under the subscription that you choose.
-{{% /notice %}}
 
-![Azure Subscription](/images/azure-subscription.png)
-
-7. Click **Next**.
-
-8. Accept the agreements on the next step and click **Sign up**. This will take a few minutes to process. Once completed, you will be directed to your Azure Portal!
-![Azure Agreement](/images/azure-agreement.png)
-
-9. Close the Azure Advisor dialog.
-
-10. In the top right of your Azure Portal console, click on **DEFAULT DIRECTORY** and select **Switch Directory**.
-
-![Azure Switch Directory](/images/azure-switch-directory.png)
-
-11. Ensure that the default subscription is _Azure Pass - Sponsorship_.
-
-![Azure Default Subscription](/images/azure-directory-sub.png)
 
 {{% notice info %}}
-Your Azure Pass promotional code has a set monetary limit that is sufficient for this workshop. If your subscription does not have payment settings, your subscription will become disabled when the limit is met unless payment settings are configured.
+Your workshop Azure environment expires after 48 hours.
 {{% /notice %}}

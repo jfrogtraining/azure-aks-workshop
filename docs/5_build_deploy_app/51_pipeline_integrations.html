@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="description" content="AWS Modernization Workshop">
+<meta name="author" content="JFrog">
+
+    <link rel="icon" href="https://jfrogtraining.github.io/azure-aks-workshop/images/favicon.png" type="image/png">
+
+    <title>Set up our JFrog Pipelines Integrations :: JFrog Platform on Azure Workshop</title>
+
+    
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618246491" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618246491" rel="stylesheet">
+    
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618246491" rel="stylesheet">
+    
+    
+
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618246491"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/51_pipeline_integrations.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/" title="Go home"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.77937in" height="2.68795in" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1014.42 981.05"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+   .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+     <path class="fil0" d="M450.58 643.86l-53.38 14.96c4.89,13.59 8.43,37.95 8.43,70.28l0 160.15 59.64 0 0 -169.52c11.11,-13.59 23.13,-20.15 36.48,-20.15 6.66,0 11.55,1.41 17.37,4.69l16.43 -55.26c-9.34,-4.22 -13.35,-5.16 -22.26,-5.16 -6.66,0 -14.66,1.41 -19.58,3.75 -11.11,5.62 -25.33,18.24 -33.8,30.42 -0.87,-13.59 -4.01,-24.33 -9.34,-34.17zm-207.07 -79.15l0 0 -6.49 0 0 324.54 62.32 0 0 -143.78 78.72 0 0 -53.38 -78.72 0 0 -74.47 98.3 0 3.82 -28.35c-59.1,-4.52 -112.79,-14.02 -157.94,-24.56zm-145.95 367.61l0 0 28.92 33.74c28.01,-11.25 63.15,-36.55 72.09,-76.34 3.11,-13.08 4.42,-21.55 4.42,-63.69l0 -260.58 -63.16 0 0 267.61c0,35.11 -1.34,48.23 -6.23,59.94 -5.79,13.12 -20.05,29.05 -36.04,39.32zm567.42 -164.36l0 0c0,56.66 -11.11,80.99 -36.92,80.99 -11.58,0 -24.93,-6.53 -30.25,-19.65 -4.89,-12.18 -7.56,-32.8 -7.56,-60.41 0,-23.9 2.21,-40.73 6.22,-53.38 4.89,-14.99 16.47,-24.37 30.69,-24.37 10.68,0 20.02,4.69 25.8,12.65 8,10.78 12.02,31.86 12.02,64.16zm36.48 93.21l0 0c19.58,-23.43 28.48,-51.54 28.48,-92.74 0,-38.89 -8.03,-65.09 -26.27,-87.59 -19.55,-24.33 -44.92,-36.05 -77.41,-36.05 -61.38,0 -102.31,50.1 -102.31,125.51 0,75.4 40.46,124.1 102.31,124.1 35.17,0 57.87,-12.65 75.2,-33.24zm170.86 -134.44l0 0c0,22.02 -12.92,34.2 -36.48,34.2 -20.92,0 -35.17,-9.84 -35.17,-34.2 0,-22.46 12.92,-35.58 35.61,-35.58 22.69,0 36.05,13.12 36.05,35.58zm105.42 -51.04l0 0 -24.9 -39.79c-13.79,13.12 -30.72,20.62 -47.16,20.62 -7.56,0 -11.58,-0.97 -28.05,-5.15 -16.47,-4.69 -28.01,-6.09 -40.93,-6.09 -58.3,0 -96.09,31.83 -96.09,81.03 0,35.58 16,57.6 48.93,66.5 -13.35,3.28 -28.05,10.28 -34.7,18.24 -4.89,5.62 -7.13,13.12 -7.13,22.02 0,7.5 1.77,14.06 4.45,19.68 3.11,5.15 7.56,9.37 12.92,11.68 10.68,4.25 28.05,7.06 54.72,7.5 13.79,0 22.26,0.47 25.37,0.47 16.47,0.94 24.9,3.75 31.13,7.06 6.23,3.72 10.68,12.15 10.68,21.52 0,9.37 -5.76,18.74 -14.22,24.36 -8,5.59 -20.92,7.93 -37.82,7.93 -27.61,0 -42.71,-10.28 -42.71,-29.49 0,-8.43 0.9,-10.31 2.64,-15.46l-55.16 0c-2.21,4.69 -5.35,11.25 -5.35,24.36 0,16.4 6.26,30.42 18.71,42.6 20.45,20.15 53.85,25.77 86.31,25.77 35.58,0 69.85,-8.43 89.86,-30.92 12.45,-14.06 18.24,-29.49 18.24,-49.63 0,-21.55 -6.23,-37.95 -19.58,-51.04 -16,-15.46 -34.24,-21.08 -68.94,-21.55l-32.06 -0.47c-6.22,0 -9.77,-2.34 -9.77,-5.62 0,-6.56 8.47,-12.18 23.59,-19.64 4.45,0.47 6.22,0.47 8.9,0.47 48.49,0 84.07,-29.99 84.07,-71.22 0,-15.9 -4.45,-28.08 -13.35,-39.32 7.56,0.94 9.81,1.41 15.56,1.41 16.47,0 28.92,-5.15 41.84,-17.81zm-749.96 -392.85l0 0c-74.57,18.24 -125.24,53.92 -125.24,94.98 0,25.4 19.44,48.73 51.88,67.14 -9.74,-15.6 -15.06,-32 -15.06,-48.93 0,-42.7 33.07,-81.96 88.42,-113.19zm786.64 160.41l0 0c0,-26.91 -16.6,-51.88 -44.81,-72.36 2.54,8.2 3.98,16.6 3.98,25.13 0,77.11 -107.7,143.08 -260.35,170.42 17.24,1.94 35.18,3.01 53.58,3.01 136.75,0 247.6,-56.49 247.6,-126.21zm-87.99 -41.94l0 0c0,-28.28 -24.23,-54.49 -65.5,-76.11 9.67,11.71 14.93,24.2 14.93,37.15 0,68.34 -145.62,123.77 -325.25,123.77 -179.59,0 -325.21,-55.42 -325.21,-123.77 0,-8.7 2.38,-17.17 6.83,-25.33 -28.85,19.08 -45.32,41 -45.32,64.29 0,74 165.53,134.01 369.76,134.01 204.23,0 369.76,-60.01 369.76,-134.01zm-161.52 -3.31l0 0c-75.34,48.7 -307.44,67.07 -407.41,4.62 -78.35,-48.96 -51.47,-126.58 -275.58,-297.6 -29.28,-22.36 5.42,-46.09 27.38,-30.89 21.92,15.19 1.84,19.24 46.12,63.56 89.39,89.46 88.52,9.04 102.65,39.46 29.69,63.96 95.19,128.38 95.19,128.38 65.63,42.71 118.01,52.01 214.77,-13.45 61.38,-41.53 36.28,66.03 186.79,-11.48 54.89,-28.28 52.61,-9.54 108.4,-87.29 23.16,-32.3 67.44,24.8 17.24,32.73 -20.08,3.18 -53.98,25.13 -68.54,59.84 -20.55,51.31 -11.65,89.29 -46.99,112.12zm-418.32 -131.53l0 0c-18.61,-8.2 -38.09,-39.89 -45.68,-52.61 20.82,-20.38 12.38,-54.49 0.64,-73.23 -11.75,-18.71 -26,-13.39 -41.63,-30.59 -15.63,-17.2 5.89,-62.05 25.94,-27.58 75.04,129.12 124.3,75.4 185.62,67.71 58.84,-7.4 110.85,24.66 126.81,-66.1 2.61,-14.86 17.03,-18.41 18.51,6.16 1.51,24.53 10.71,84.31 43.04,92.04 32.36,7.7 58.03,-7.6 65.63,-16.06 7.56,-8.47 11.51,-7.26 14.86,13.79 3.31,21.08 11.51,50.17 56.93,17.77 92.91,-66.3 66.3,-91.94 102.41,-108.97 20.58,-9.71 52.98,21.85 6.13,45.55 -67,33.87 -74.1,75.94 -116.44,102.65 -71.15,44.95 -49.4,1.81 -163.89,-14.49 -44.08,-6.29 -58.27,42.87 -92.67,28.68 -79.39,-32.8 -134.78,-26.51 -186.18,15.29zm248.13 -239.33l0 0c2.61,19.38 5.86,18.91 12.82,20.72 6.93,1.77 15.73,-9.14 16.03,-19.71 0.3,-10.61 -4.52,-17.27 -14.99,-16.9 -10.44,0.4 -14.19,5.66 -13.86,15.9zm345.03 35.28l0 0c8.33,8.13 30.59,2.64 35.78,-3.18 13.32,-14.93 13.79,-23.93 6.93,-33.94 -6.9,-9.97 -21.42,-8.17 -35.81,2.27 -14.36,10.41 -11.65,30.22 -6.89,34.84zm-6.26 98.6l0 0c-7.16,9.51 -7.36,16.23 -2.28,21.49 5.42,5.59 16.67,10.44 24.77,3.98 8.07,-6.39 8.07,-15.73 1.2,-23.97 -6.89,-8.23 -16.27,-8.23 -23.69,-1.51zm-707.22 -116.57l0 0c10.91,3.35 15.7,13.49 24.9,1.91 4.55,-5.72 4.99,-13.28 -1.04,-21.82 -3.82,-5.32 -21.52,-9 -29.05,-1.41 -7.53,7.6 -0.67,19.51 5.19,21.32zm-218.78 -6.53l0 0c19.55,11.98 32.37,30.12 47.09,13.92 4.95,-5.39 11.14,-15.6 0.47,-35.14 -7.8,-14.29 -33.5,-20.15 -42.57,-14.66 -9.07,5.45 -20.15,26.57 -4.99,35.88zm180.63 92.71l0 0c6.22,6.46 16.8,5.93 23.13,2.44 6.29,-3.55 4.99,-13.32 -1.07,-21.85 -3.78,-5.32 -15.06,-7.8 -22.59,-0.2 -7.53,7.6 -3.82,15.09 0.54,19.61z"/>
+ </g>
+</svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618246491"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618246491"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/jfrogtraining.github.io\/azure-aks-workshop\/";
+    
+</script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618246491"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_prerequisites.html" title="Prerequisites" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/1_prerequisites.html">
+          <b>1 </b>Prerequisites
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_devops_cloud.html" title="DevOps in the Cloud" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud.html">
+          <b>2 </b>DevOps in the Cloud
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_devops_cloud/21_continuous_integration_and_delivery.html" title="Continuous Integration and Delivery" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/21_continuous_integration_and_delivery.html">
+        <b>2.1 </b>Continuous Integration and Delivery
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_devops_cloud/22_binary_repository_management.html" title="Binary Repository Management" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/22_binary_repository_management.html">
+        <b>2.2 </b>Binary Repository Management
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_devops_cloud/23_dev_sec_ops.html" title="DevSecOps" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/23_dev_sec_ops.html">
+        <b>2.3 </b>DevSecOps
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_devops_cloud/24_jfrog_platform_overview.html" title="JFrog Platform for DevOps in the Cloud" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/2_devops_cloud/24_jfrog_platform_overview.html">
+        <b>2.4 </b>JFrog Platform for DevOps in the Cloud
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_workshop.html" title="Workshop Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/3_workshop.html">
+          <b>3 </b>Workshop Overview
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_workshop_setup.html" title="Workshop Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup.html">
+          <b>4 </b>Workshop Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_workshop_setup/41_azure_setup.html" title="Azure Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup.html">
+          <b>4.1 </b>Azure Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/412_azure_event_account.html" title="JFrog Azure Event: Get an Azure Environment" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html">
+        <b>4.1.2 </b>JFrog Azure Event: Get an Azure Environment
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/413_self_paced_account.html" title="Self-paced: Create an Azure account" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/413_self_paced_account.html">
+        <b>4.1.3 </b>Self-paced: Create an Azure account
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html" title="Set up your Azure Cloud Shell" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/414_azure_cloud_shell.html">
+        <b>4.1.4 </b>Set up your Azure Cloud Shell
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/415_azure_service_principal.html" title="Create a Service Principal" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_azure_service_principal.html">
+        <b>4.1.5 </b>Create a Service Principal
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/416_create_cluster.html" title="Create an AKS Cluster" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_create_cluster.html">
+        <b>4.1.6 </b>Create an AKS Cluster
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/41_azure_setup/417_workshop_code.html" title="Get the Workshop Code" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_workshop_code.html">
+        <b>4.1.7 </b>Get the Workshop Code
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_workshop_setup/42_jfrog_setup.html" title="JFrog Platform Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup.html">
+          <b>4.2 </b>JFrog Platform Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html" title="Get a Free JFrog Platform Instance" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html">
+        <b>4.2.1 </b>Get a Free JFrog Platform Instance
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/42_jfrog_setup/422_jfrog_pipelines.html" title="Activate JFrog Pipelines CI/CD" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_jfrog_pipelines.html">
+        <b>4.2.2 </b>Activate JFrog Pipelines CI/CD
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/42_jfrog_setup/423_docker_repositories.html" title="Set Up Docker Repositories" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_docker_repositories.html">
+        <b>4.2.3 </b>Set Up Docker Repositories
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_workshop_setup/42_jfrog_setup/424_xray_setup.html" title="Set Up Xray Security" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_xray_setup.html">
+        <b>4.2.4 </b>Set Up Xray Security
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5_build_deploy_app.html" title="Build and Deploy the App" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app.html">
+          <b>5 </b>Build and Deploy the App
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/5_build_deploy_app/51_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" class="dd-item active">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/51_pipeline_integrations.html">
+        <b>5.1 </b>Set up our JFrog Pipelines Integrations
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/5_build_deploy_app/52_update_pipeline.html" title="Update our Pipeline" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/52_update_pipeline.html">
+        <b>5.2 </b>Update our Pipeline
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/5_build_deploy_app/53_add_pipeline.html" title="Set Up Xray Security" class="dd-item ">
+        <a href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/53_add_pipeline.html">
+        <b>4.2.4 </b>Set Up Xray Security
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6_view_results.html" title="View Results in JFrog" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/6_view_results.html">
+          <b>6 </b>View Results in JFrog
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7_make_changes.html" title="Make Changes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/7_make_changes.html">
+          <b>7 </b>Make Changes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8_conclusion.html" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://jfrogtraining.github.io/azure-aks-workshop/8_conclusion.html">
+          <b>8 </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://jfrogtraining.github.io/azure-aks-workshop/cleanup.html"><i class='fas fa-trash-alt'></i> Cleanup</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/jfrogtraining/azureworkshop"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://jfrogtraining.github.io/azure-aks-workshop/resources.html"><i class='fab fa-readme'></i> Resources</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <h5 class="copyright">&copy; 2020 JFrog, Inc. or its Affiliates. All rights reserved.<h5>
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://jfrogtraining.github.io/azure-aks-workshop/'>JFrog Platform on Azure Workshop</a> > <a href='https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app.html'>Build and Deploy the App</a> > Set up our JFrog Pipelines Integrations
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Set up our JFrog Pipelines Integrations
+            </h1>
+          
+
+        
+
+
+<p>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to publish our Docker image and build info and access to the AKS cluster to deploy our application. We will set up JFrog Pipelines integrations to enable these.</p>
+
+<div class="notices info" ><p>An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</p>
+</div>
+
+<ol>
+<li>
+<p>In your JFrog Platform instance, go to <strong>Administration</strong> &gt; <strong>Pipelines</strong> &gt; <strong>Integrations</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Add an Integration</strong>.</p>
+</li>
+<li>
+<p>For the <strong>Name</strong>, enter <em>github_integration</em>.</p>
+</li>
+<li>
+<p>For <strong>Integration Type</strong>, select <strong>GitHub</strong>.</p>
+</li>
+<li>
+<p>Copy and paste your GitHub personal access token.</p>
+<p>Ensure it has these minimum GitHub permissions:</p>
+<ul>
+<li>repo (all)</li>
+<li>admin:repo_hook (read, write)</li>
+<li>admin:public_key (read, write)</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Test connection</strong> to validate.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong> to create the integration.</p>
+</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/github-integration.png" alt="GitHub Integration"></p>
+<ol start="8">
+<li>
+<p>Click <strong>Add an Integration</strong> again.</p>
+</li>
+<li>
+<p>For the <strong>Name</strong>, enter <em>artifactory_integration</em>.</p>
+</li>
+<li>
+<p>For <strong>Integration Type</strong>, select <strong>Artifactory</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Get API Key</strong> to generate an API key.</p>
+</li>
+<li>
+<p>Click <strong>Test connection</strong> to validate.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong> to create the integration.</p>
+</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/artifactory-integration.png" alt="Artifactory Integration"></p>
+<ol start="14">
+<li>
+<p>Click <strong>Add an Integration</strong> again.</p>
+</li>
+<li>
+<p>For the <strong>Name</strong>, enter <em>aks_integration</em>.</p>
+</li>
+<li>
+<p>For <strong>Integration Type</strong>, select <strong>Kubernetes</strong>.</p>
+</li>
+<li>
+<p>Copy and paste your AKS Kubernetes cluster kubeconfig.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong> to create the integration.</p>
+</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/aks-integration.png" alt="AKS Integration"></p>
+<p>Congratulations! We have created the integrations that are required for our CI/CD pipeline.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app.html" title="Build and Deploy the App"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="https://jfrogtraining.github.io/azure-aks-workshop/5_build_deploy_app/52_update_pipeline.html" title="Update our Pipeline" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618246491"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618246491"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618246491"></script>
+    
+        
+            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618246491"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

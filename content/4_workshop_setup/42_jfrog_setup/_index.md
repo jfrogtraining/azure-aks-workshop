@@ -1,12 +1,15 @@
 ---
 title: "JFrog Platform Setup"
 chapter: false
-weight: 43
-pre: "<b>4.3 </b>"
+weight: 42
+pre: "<b>4.2 </b>"
 ---
 
-Next, we will setup our JFrog Platform instance and the JFrog CLI. We will:
+Next, we will setup our JFrog Platform instance. We will:
 
-- Setup our JFrog Platform API credentials to be used by the JFrog CLI.
-- Install and configure the JFrog CLI.
-- Configure the JFrog Artifactory and Xray components of the JFrog Platform for our workshop.
+- Get a free JFrog Platform instance.
+- Activate JFrog Pipelines CI/CD
+- Set up our docker repositories.
+- Configure Xray to scan our repositories for security vulnerabilities.
+
+

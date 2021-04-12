@@ -12,38 +12,43 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/421_jfrog_free.html</guid>
-      <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
-When signing up for the JFrog Platform Cloud Free Tier.
+      <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory, Xray and Pipelines.
+When signing up for the JFrog Platform Cloud Free Tier, ensure that you select Azure and the region for your resource group.
   JFrog Platform Cloud Free Tier   </description>
     </item>
     
     <item>
-      <title>Generate an API Key</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</link>
+      <title>Activate JFrog Pipelines CI/CD</title>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_jfrog_pipelines.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_api_key.html</guid>
-      <description>Remember your username and API key. We will use it again with the JFrog CLI and to set up Azure AKS to deploy your image.
-  Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.  Once logged into your JFrog Platform instance, you will be presented with the landing page.</description>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/422_jfrog_pipelines.html</guid>
+      <description>Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.   Login to your JFrog Platform instance with your credentials.   Once logged into your JFrog Platform instance, you will be presented with the landing page.   Go to Application &amp;gt; Pipelines and follow the instructions to activate JFrog Pipelines. This will take a few minutes.</description>
     </item>
     
     <item>
-      <title>Install and Configure the JFrog CLI</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</link>
+      <title>Set Up Docker Repositories</title>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_docker_repositories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_jfrog_cli.html</guid>
-      <description>JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation.</description>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/423_docker_repositories.html</guid>
+      <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.  On the Create Repositories dialog, choose Docker and click Next.   Next, enter workshop for the Repositories Prefix.
+  Click Create. This will create the following docker repositories:
+   workshop-docker-local workshop-docker-remote workshop-docker   Local repositories are physical, locally-managed repositories into which you can deploy artifacts. These are repositories that are local to the JFrog Artifactory instance.</description>
     </item>
     
     <item>
-      <title>Configure JFrog Artifactory and Xray</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</link>
+      <title>Set Up Xray Security</title>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_configure_jfrog.html</guid>
-      <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
-  In your Azure Cloud Shell, change directory to the azureworkshop directory that you cloned previously.</description>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/42_jfrog_setup/424_xray_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.   Click Create a Policy.
+  Call the security policy, High-Severity.
+   Click on New Rule.
+  Name the rule High-Severity and select High for the Minimal Severity. Click Save.
+   Click Create to create this new security policy.
+  Click on the Watches tab under Watches &amp;amp; Policies.</description>
     </item>
     
   </channel>
