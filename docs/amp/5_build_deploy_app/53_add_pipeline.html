@@ -12,21 +12,21 @@
     <title>Add our CI/CD Pipeline :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618251051" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618252911" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618252911" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618252911" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618252911"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618251051"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618251051"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618252911"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618252911"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azure-aks-workshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618251051"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618252911"></script>
 
     
   </div>
@@ -902,8 +902,29 @@ viewBox="0 0 1014.42 981.05"
 </ol>
 <p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/create-pipeline-source.png" alt="Create Pipeline Source"></p>
 <ol start="5">
-<li>Click <strong>Create Source</strong>.</li>
+<li>Click <strong>Create Source</strong>. JFrog Pipelines will process the CI/CD pipeline. The status should show <strong>Syncing</strong> and then <strong>Success</strong>.</li>
 </ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/success-pipeline-source.png" alt="Success Pipeline Source"></p>
+<ol start="6">
+<li>Go to <strong>Application</strong> &gt; <strong>Pipelines</strong> &gt; <strong>My Pipelines</strong>. Notice that your pipeline has a status of <strong>Not Built</strong>.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/my-pipelines.png" alt="My Pipelines"></p>
+<ol start="7">
+<li>Click on your pipeline, <strong>workshop_app_build</strong>.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/workshop-pipeline.png" alt="Workshop Pipeline"></p>
+<ol start="8">
+<li>Click on the <em>docker_build</em> step and trigger the step to execute the pipeline. JFrog Pipelines will allocate build nodes and execute your pipeline.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/trigger-pipeline.png" alt="Trigger Pipeline"></p>
+<ol start="9">
+<li>It will take a few minutes to execute. Click on the <em>Run</em> to monitor the status of each step.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/pipeline-wait.png" alt="Pipeline Wait"></p>
+<ol start="10">
+<li>Use the pulldown to select each step and view the logs.</li>
+</ol>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/pipeline-step-logs.png" alt="Pipeline Step Logs"></p>
 
 
 <footer class="footline">
@@ -1399,19 +1420,19 @@ viewBox="0 0 1014.42 981.05"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618252911"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618251051"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618252911"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618252911"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618251051"></script>
+            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618252911"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

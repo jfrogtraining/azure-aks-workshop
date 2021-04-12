@@ -94,9 +94,9 @@ pipelines:
             - pwd
             - ls
             - kubectl create namespace azure-aks-workshop || true
-            - sed "s|imageName|{{ .Values.DockerBuild.dockerImageName }}:${run_number}|g" workshop-app/deployment.yml > my-deployment.yaml
-            - cat my-deployment.yaml
-            - kubectl apply -f my-deployment.yaml --namespace azure-aks-workshop
+            - sed "s|imageName|{{ .Values.DockerBuild.dockerImageName }}:${run_number}|g" workshop-app/deployment.yml > my-deployment.yml
+            - cat my-deployment.yml
+            - kubectl apply -f my-deployment.yml --namespace azure-aks-workshop
             - while [ -z "$url" ]; do url=$(kubectl describe service workshop-app --namespace azure-aks-workshop | grep 'LoadBalancer Ingress:' | awk '{printf "https://%s",$3;}'); sleep 2; done
             - echo "$url"
             - echo "Workshop App launched!"

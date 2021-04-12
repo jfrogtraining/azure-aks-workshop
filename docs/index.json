@@ -123,7 +123,7 @@
 	"title": "Add our CI/CD Pipeline",
 	"tags": [],
 	"description": "",
-	"content": " In your JFrog Platform instance, go to Application \u0026gt; Pipelines \u0026gt; Pipeline Sources.   Click Add a pipeline source.\n  Click Add Pipeline Source at the top right and select From YAML.\n   For SCM Provider Integration, select the github_integration that you created previously.\n  For Repository Full Name, select your forked /azure-aks-workshop.\n  For Branch, select master.\n  Leave Pipeline Config File Filter as pipelines.yml.\n  Click Create Source.  "
+	"content": " In your JFrog Platform instance, go to Application \u0026gt; Pipelines \u0026gt; Pipeline Sources.   Click Add a pipeline source.\n  Click Add Pipeline Source at the top right and select From YAML.\n   For SCM Provider Integration, select the github_integration that you created previously.\n  For Repository Full Name, select your forked /azure-aks-workshop.\n  For Branch, select master.\n  Leave Pipeline Config File Filter as pipelines.yml.\n  Click Create Source. JFrog Pipelines will process the CI/CD pipeline. The status should show Syncing and then Success.  Go to Application \u0026gt; Pipelines \u0026gt; My Pipelines. Notice that your pipeline has a status of Not Built.  Click on your pipeline, workshop_app_build.  Click on the docker_build step and trigger the step to execute the pipeline. JFrog Pipelines will allocate build nodes and execute your pipeline.  It will take a few minutes to execute. Click on the Run to monitor the status of each step.  Use the pulldown to select each step and view the logs.  "
 },
 {
 	"uri": "https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/412_azure_event_account.html",
