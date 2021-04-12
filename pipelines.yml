@@ -5,8 +5,8 @@ resources:
   - name: git_repo
     type: GitRepo
     configuration:
-      path: {{ Values.GitHub.path }}
-      gitProvider: GitHubIntegration
+      path: {{ .Values.GitHub.path }}
+      gitProvider: github_integration
       branches:
         include: master
   - name: workshop_app_image
@@ -14,7 +14,7 @@ resources:
     configuration:
       registry: artifactory_integration
       sourceRepository: workshop-docker-local
-      imageName: {{ Values.DockerBuild.dockerImageName }}
+      imageName: {{ .Values.DockerBuild.dockerImageName }}
       imageTag: ${run_number}
       autoPull: true
   - name: workshop_build_info
@@ -39,7 +39,7 @@ pipelines:
           affinityGroup: docker_build
           dockerFileLocation: workshop-app
           dockerFileName: Dockerfile
-          dockerImageName: {{ Values.DockerBuild.dockerImageName }}
+          dockerImageName: {{ .Values.DockerBuild.dockerImageName }}
           dockerImageTag: ${run_number}
           inputResources:
             - name: git_repo
@@ -94,7 +94,7 @@ pipelines:
             - pwd
             - ls
             - kubectl create namespace azure-aks-workshop || true
-            - sed "s|imageName|{{ Values.DockerBuild.dockerImageName }}:${run_number}|g" workshop-app/deployment.yml > my-deployment.yaml
+            - sed "s|imageName|{{ .Values.DockerBuild.dockerImageName }}:${run_number}|g" workshop-app/deployment.yml > my-deployment.yaml
             - cat my-deployment.yaml
             - kubectl apply -f my-deployment.yaml --namespace azure-aks-workshop
             - while [ -z "$url" ]; do url=$(kubectl describe service workshop-app --namespace azure-aks-workshop | grep 'LoadBalancer Ingress:' | awk '{printf "https://%s",$3;}'); sleep 2; done

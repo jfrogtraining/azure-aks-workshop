@@ -12,21 +12,21 @@
     <title>Add our CI/CD Pipeline :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618247967" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618247967" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618251051" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618251051" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618247967" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618251051" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618247967"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618251051"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618247967"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618247967"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618251051"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618251051"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azure-aks-workshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618247967"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618251051"></script>
 
     
   </div>
@@ -887,68 +887,23 @@ viewBox="0 0 1014.42 981.05"
 </ol>
 <p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/pipeline-from-yaml.png" alt="Pipeline From YAML"></p>
 <ol start="3">
-<li>Call the security policy, <em>High-Severity</em>.</li>
-</ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/policy-name.png" alt="Policy Name"></p>
-<ol start="4">
 <li>
-<p>Click on <strong>New Rule</strong>.</p>
+<p>For <strong>SCM Provider Integration</strong>, select the <strong>github_integration</strong> that you created previously.</p>
 </li>
 <li>
-<p>Name the rule <em>High-Severity</em> and select <strong>High</strong> for the <strong>Minimal Severity</strong>. Click <strong>Save</strong>.</p>
-</li>
-</ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/xray-rule.png" alt="Xray Rule"></p>
-<ol start="6">
-<li>
-<p>Click <strong>Create</strong> to create this new security policy.</p>
+<p>For <strong>Repository Full Name</strong>, select your forked <strong><!-- raw HTML omitted -->/azure-aks-workshop</strong>.</p>
 </li>
 <li>
-<p>Click on the <strong>Watches</strong> tab under <strong>Watches &amp; Policies</strong>.</p>
+<p>For <strong>Branch</strong>, select <strong>master</strong>.</p>
+</li>
+<li>
+<p>Leave <strong>Pipeline Config File Filter</strong> as <em>pipelines.yml</em>.</p>
 </li>
 </ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/setup-watch.png" alt="Setup Watch"></p>
-<ol start="8">
-<li>
-<p>Click on <strong>Set up a Watch</strong>.</p>
-</li>
-<li>
-<p>Name the new watch <em>Docker-Scanning</em>.</p>
-</li>
-<li>
-<p>Click <strong>Add Repositories</strong>.</p>
-</li>
-<li>
-<p>Move the repositories <strong>workshop-docker-local</strong> and <strong>workshop-docker-prod-local</strong> to the <strong>Included Repositories</strong>.</p>
-</li>
+<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/create-pipeline-source.png" alt="Create Pipeline Source"></p>
+<ol start="5">
+<li>Click <strong>Create Source</strong>.</li>
 </ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/scanned-repositories.png" alt="Scanned Repositories"></p>
-<ol start="12">
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Manage Policies</strong>.</p>
-</li>
-<li>
-<p>Move the <strong>High-Severity</strong> policy to the <strong>Included Policy</strong>.</p>
-</li>
-</ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/selected-policy.png" alt="Selected Policy"></p>
-<ol start="15">
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Create</strong> to create the new watch. This watch will scan the <strong>workshop-docker-local</strong> and <strong>workshop-docker-prod-local</strong> Docker repositories for new images and check for high severity security vulnerabilities.</p>
-</li>
-</ol>
-<p><img src="https://jfrogtraining.github.io/azure-aks-workshop/images/created-watch.png" alt="Created Watch"></p>
-
-<div class="notices info" ><p>JFrog Xray scans your artifacts, builds and release bundles for OSS components, and detects security vulnerabilities and licenses in your software components.
-Policies and Watches allow you to enforce your organization governance standards. Setup up your Policies and Watches to reflect standard governance behaviour specifications for your organization across your software components.</p>
-</div>
-
 
 
 <footer class="footline">
@@ -1444,19 +1399,19 @@ Policies and Watches allow you to enforce your organization governance standards
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618247967"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618251051"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618247967"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618247967"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618251051"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618251051"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618247967"></script>
+            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618251051"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

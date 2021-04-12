@@ -68,7 +68,7 @@ When you have applications, hosted services, or automated tools that needs to ac
       <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_workshop_code.html</guid>
       <description>The workshop code is located at https://github.com/jfrogtraining/azure-aks-workshop GitHub repository. We will fork and clone this repository in order to pull the required workshop files and scripts.
  Go to https://github.com/jfrogtraining/azure-aks-workshop and fork this repository to your GitHub account.  Clone the repo. You can do this locally in the Azure Cloud Shell. You can open another Azure Cloud Shell session.  git clone https://github.com/&amp;lt;your user name&amp;gt;/azure-aks-workshop.git
-You can use the Azure Cloud Shell editor to explore the code.</description>
+Set your GitHub username and email.</description>
     </item>
     
   </channel>

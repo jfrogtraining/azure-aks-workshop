@@ -19,16 +19,24 @@ The workshop code is located at [https://github.com/jfrogtraining/azure-aks-work
 git clone https://github.com/<your user name>/azure-aks-workshop.git
 ``
 
-3. You can use the Azure Cloud Shell editor to explore the code.
+3. Set your GitHub username and email.
+
+``
+git config --global user.name <GitHub username>
+``
+
+``
+git config --global user.email <GitHub email>
+``
+
+4. You can use the Azure Cloud Shell editor to explore the code.
 
 ![Azure Cloud Shell Editor](/images/azure-cloud-shell-editor.png)
 
-4. We will also need a GitHub personal access token to make updates and for JFrog Pipelines CI/CD. You may already have one. If not, follow [these instructions](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) to create one. Copy it to your notepad. 
+5. We will also need a GitHub personal access token to make updates and for JFrog Pipelines CI/CD. You may already have one. If not, follow [these instructions](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) to create one. Copy it to your notepad. 
    
     Ensure it has these minimum GitHub permissions:
 
     - repo (all)
     - admin:repo_hook (read, write)
     - admin:public_key (read, write)
-
-   
