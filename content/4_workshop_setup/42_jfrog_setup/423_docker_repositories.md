@@ -61,19 +61,11 @@ pre: "<b>4.2.3 </b>"
 
 15. Click **Save & Finish**.
 
-16. Go to **Administration** > **Identity and Access** > **Permissions**.
+16. Go to **Administration** > **Security** > **Settings**.
 
-![Permissions](/images/permissions.png)
+17. Check **Allow Anonymous Access**. For our workshop, this will allow us to deploy our Docker image to our AKS cluster without authenticating.
 
-17. Click the **Anything** permission. This sets the permissions for all of the repositories including the new Docker repositories that we just created.
-
-![Edit Permission](/images/edit-permission.png)
-
-18. Click on the **Users** tab.
-
-19. Check **Deploy/Cache**. For our workshop, this will allow us to deploy our Docker image to our AKS cluster without authenticating.
-
-![Deploy Cache](/images/deploy-cache.png)
+![Anonymous Access](/images/anonymous-access.png)
 
 20. Click **Save**.
 

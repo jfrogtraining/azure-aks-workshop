@@ -1,8 +1,8 @@
 ---
 title: "Create an AKS Cluster"
 chapter: false
-weight: 416
-pre: "<b>4.1.6 </b>"
+weight: 415
+pre: "<b>4.1.5 </b>"
 ---
 
 Before creating an AKS cluster for our application, we must first set up the required networking with the following steps.
@@ -24,7 +24,7 @@ CLUSTER_NAME=jfrog-azure-workshop-cluster
 echo $CLUSTER_NAME
 ```
 
-2. Now we are ready to create the AKS cluster. Execute the following command. This will take a few minutes. We can move onto the next step while we wait.
+2. Now we are ready to create the AKS cluster. Execute the following command. This will take a few minutes.
 
 ```
 az aks create \

@@ -112,31 +112,21 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     </item>
     
     <item>
-      <title>Create a Service Principal</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_azure_service_principal.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_azure_service_principal.html</guid>
-      <description>To deploy our application with our CI/CD pipeline, we need Azure credentials. To do this, we will create an Azure service principal.
-When you have applications, hosted services, or automated tools that needs to access or modify resources, you can create an identity for the app. This identity is known as a service principal. Access to resources is restricted by the roles assigned to the service principal, giving you control over which resources can be accessed and at which level.</description>
-    </item>
-    
-    <item>
       <title>Create an AKS Cluster</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_create_cluster.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_create_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_create_cluster.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/415_create_cluster.html</guid>
       <description>Before creating an AKS cluster for our application, we must first set up the required networking with the following steps.
  Now we are ready to create an AKS cluster. In your Azure Cloud Shell, let&amp;rsquo;s get the latest version of Kubernetes that is available with the following command.  VERSION=$(az aks get-versions \ --location $REGION \ --query &#39;orchestrators[?!isPreview] | [-1].orchestratorVersion&#39; \ --output tsv) echo $VERSION Let&amp;rsquo;s create an environment variable for the cluster name.</description>
     </item>
     
     <item>
       <title>Get the Workshop Code</title>
-      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_workshop_code.html</link>
+      <link>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_workshop_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/417_workshop_code.html</guid>
+      <guid>https://jfrogtraining.github.io/azure-aks-workshop/4_workshop_setup/41_azure_setup/416_workshop_code.html</guid>
       <description>The workshop code is located at https://github.com/jfrogtraining/azure-aks-workshop GitHub repository. We will fork and clone this repository in order to pull the required workshop files and scripts.
  Go to https://github.com/jfrogtraining/azure-aks-workshop and fork this repository to your GitHub account.  Clone the repo. You can do this locally in the Azure Cloud Shell. You can open another Azure Cloud Shell session.  git clone https://github.com/&amp;lt;your user name&amp;gt;/azure-aks-workshop.git
 Set your GitHub username and email.</description>

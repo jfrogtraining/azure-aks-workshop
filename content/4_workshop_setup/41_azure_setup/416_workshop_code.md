@@ -1,8 +1,8 @@
 ---
 title: "Get the Workshop Code"
 chapter: false
-weight: 417
-pre: "<b>4.1.7 </b>"
+weight: 416
+pre: "<b>4.1.6 </b>"
 ---
 
 The workshop code is located at [https://github.com/jfrogtraining/azure-aks-workshop](https://github.com/jfrogtraining/azureworkshop) GitHub repository. We will fork and clone this repository in order to pull the required workshop files and scripts.
