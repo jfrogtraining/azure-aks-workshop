@@ -26,7 +26,7 @@ canonifyurls = true
   # Author of the site, will be used in meta information
   author = "JFrog"
   # Description of the site, will be used in meta information
-  description = "AWS Modernization Workshop"
+  description = "JFrog Platform on Azure Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -59,7 +59,7 @@ weight = 10
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "repo"
-url = "https://github.com/jfrogtraining/azureworkshop"
+url = "https://jfrogtraining.github.io/azure-aks-workshop/"
 weight = 20
 
 [[menu.shortcuts]]

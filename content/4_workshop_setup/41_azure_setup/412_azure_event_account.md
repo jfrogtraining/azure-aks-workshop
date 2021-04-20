@@ -17,7 +17,7 @@ For an JFrog Azure hosted event, you will be provided with a registration link a
    ![Azure Environment Registration](/images/azure-environment-registration.png)
 3. Then click **Launch Lab** on the next screen.
    ![Azure Environment Launch](/images/azure-environment-launch.png)
-4. Wait a few moments for your Azure environment to be created. When ready, you will be presented with your Azure environment credentials.
+4. Wait a few minutes for your Azure environment to be created. When ready, you will be presented with your Azure environment credentials.
    ![Azure Environment Ready](/images/azure-environment-ready.png)
 5. Copy these credentials. 
 6. Use these Azure Credentials to login to the Azure Portal [here](https://portal.azure.com/). Once logged in, you will be directed to the Azure Portal landing page.
