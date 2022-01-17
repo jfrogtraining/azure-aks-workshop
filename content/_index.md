@@ -4,9 +4,7 @@ chapter: true
 weight: 1
 ---
 
-![Azure Logo](/images/azure-logo.jpg)
-
-# JFrog Platform on Azure Workshop
+![Azure Logo](/images/test.png)
 
 ### Welcome
 

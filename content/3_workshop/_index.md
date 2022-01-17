@@ -9,6 +9,3 @@ In this workshop, we will demonstrate DevOps in the cloud with Azure and JFrog. 
 
 ![Hands On Diagram](/images/azure-diagram-steps.png)
 
-
-![NPM Application](/images/npm-app.png)
-

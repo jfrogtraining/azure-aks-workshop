@@ -14,3 +14,5 @@ The following items are required for this workshop.
 - A [GitHub](https://github.com/) account and Git installed.
   
 - Have a notepad available for saving important workshop data.
+
+![Prerequisites](/images/Prerequisites.png)

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="generator" content="Hugo 0.89.2" />
     <meta name="description" content="JFrog Platform on Azure Workshop">
 <meta name="author" content="JFrog">
 
@@ -12,21 +12,21 @@
     <title>Create an AKS Cluster :: JFrog Platform on Azure Workshop</title>
 
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1618958776" rel="stylesheet">
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1618958776" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/nucleus.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/fontawesome-all.min.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hybrid.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/featherlight.min.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/perfect-scrollbar.min.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/auto-complete.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/atom-one-dark-reasonable.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme.css?1642415409" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/hugo-theme.css?1642415409" rel="stylesheet">
     
-    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1618958776" rel="stylesheet">
+    <link href="https://jfrogtraining.github.io/azure-aks-workshop/css/theme-mine.css?1642415409" rel="stylesheet">
     
     
 
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1618958776"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery-3.3.1.min.js?1642415409"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -67,14 +67,14 @@ viewBox="0 0 1014.42 981.05"
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1618958776"></script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1618958776"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/lunr.min.js?1642415409"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/auto-complete.js?1642415409"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/jfrogtraining.github.io\/azure-aks-workshop\/";
     
 </script>
-<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1618958776"></script>
+<script type="text/javascript" src="https://jfrogtraining.github.io/azure-aks-workshop/js/search.js?1642415409"></script>
 
     
   </div>
@@ -862,7 +862,7 @@ viewBox="0 0 1014.42 981.05"
 <ol>
 <li>Now we are ready to create an AKS cluster. In your Azure Cloud Shell, let&rsquo;s get the latest version of Kubernetes that is available with the following command.</li>
 </ol>
-<pre><code>VERSION=$(az aks get-versions \
+<pre tabindex="0"><code>VERSION=$(az aks get-versions \
     --location $REGION \
     --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' \
     --output tsv)
@@ -870,12 +870,12 @@ echo $VERSION
 </code></pre><ol start="2">
 <li>Let&rsquo;s create an environment variable for the cluster name.</li>
 </ol>
-<pre><code>CLUSTER_NAME=jfrog-azure-workshop-cluster
+<pre tabindex="0"><code>CLUSTER_NAME=jfrog-azure-workshop-cluster
 echo $CLUSTER_NAME
 </code></pre><ol start="2">
 <li>Now we are ready to create the AKS cluster. Execute the following command. This will take a few minutes.</li>
 </ol>
-<pre><code>az aks create \
+<pre tabindex="0"><code>az aks create \
     --resource-group $RESOURCE_GROUP \
     --name $CLUSTER_NAME \
     --vm-set-type VirtualMachineScaleSets \
@@ -1395,19 +1395,19 @@ echo $CLUSTER_NAME
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1618958776"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/clipboard.min.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.min.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/perfect-scrollbar.jquery.min.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/jquery.sticky.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/featherlight.min.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/highlight.pack.js?1642415409"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1618958776"></script>
-    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1618958776"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/modernizr.custom-3.6.0.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/learn.js?1642415409"></script>
+    <script src="https://jfrogtraining.github.io/azure-aks-workshop/js/hugo-learn.js?1642415409"></script>
     
         
-            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1618958776"></script>
+            <script src="https://jfrogtraining.github.io/azure-aks-workshop/mermaid/mermaid.js?1642415409"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

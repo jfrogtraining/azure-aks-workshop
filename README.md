@@ -14,7 +14,7 @@ A critical aspect of DevOps is infrastructure. Cloud computing infrastructure ha
 - Allowing multi-discipline teams to collaborate in the cloud across the software lifecycle to ensure quality, security, velocity and scale of applications.
 
 This workshop walks you through a typical build, docker build and push, security scan and promotion process using Artifactory and Xray on Azure cloud infrastructure using Azure Kubernetes Service (AKS).
-## Building this Workshop with [Hugo](https://gohugo.io/)
+## Building this Workshop with [Hugo](https://gohugo.io/) ![image](https://user-images.githubusercontent.com/25744447/142215760-31e62216-5e46-4705-99a3-0a9e1c5c295c.png)
 
 ### Hugo Theme Installation
 The Hugo Learn Theme is referenced by [git submodule](.gitmodules). To download it, run the following commands:
